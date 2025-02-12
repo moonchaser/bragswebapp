@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-  <head>
-    <meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
-    
-    <!-- SEO meta tags -->
-    <title>bRAGs | AI Powered Tools</title>
-    <meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
-    <meta name="keywords" content="CI, CD, RAG, LLM, local LLM, QA automation, AI agents, Jenkins, Github actions">
-    <meta name="author" content="Createx Studio">
+	<!-- Viewport -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
 
-    <!-- Webmanifest + Favicon / App icons -->
-    <link rel="manifest" href="/manifest.json">
+	<!-- SEO meta tags -->
+	<title>bRAGs | AI Powered Tools</title>
+	<meta name="description" content="Around - Multipurpose Bootstrap HTML Template">
+	<meta name="keywords" content="CI, CD, RAG, LLM, local LLM, QA automation, AI agents, Jenkins, Github actions">
+	<meta name="author" content="Createx Studio">
+
+	<!-- Webmanifest + Favicon / App icons -->
+	<link rel="manifest" href="/manifest.json">
     <!--   <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
 	   <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png"> -->
-           
+
 	   <!-- Theme switcher (color modes) -->
 	   <script src="assets/js/theme-switcher.js"></script>
 
@@ -37,295 +37,309 @@
 
 	   <!-- Page loading styles -->
 	   <style>
-	     .page-loading {
-		 position: fixed;
-		 top: 0;
-		 right: 0;
-		 bottom: 0;
-		 left: 0;
-		 width: 100%;
-		 height: 100%;
-		 -webkit-transition: all .4s .2s ease-in-out;
-		 transition: all .4s .2s ease-in-out;
-		 background-color: #fff;
-		 opacity: 0;
-		 visibility: hidden;
-		 z-index: 9999;
-	     }
-	     [data-bs-theme="dark"] .page-loading {
-		 background-color: #121519;
-	     }
-	     .page-loading.active {
-		 opacity: 1;
-		 visibility: visible;
-	     }
-	     .page-loading-inner {
-		 position: absolute;
-		 top: 50%;
-		 left: 0;
-		 width: 100%;
-		 text-align: center;
-		 -webkit-transform: translateY(-50%);
-		 transform: translateY(-50%);
-		 -webkit-transition: opacity .2s ease-in-out;
-		 transition: opacity .2s ease-in-out;
-		 opacity: 0;
-	     }
-	     .page-loading.active > .page-loading-inner {
-		 opacity: 1;
-	     }
-	     .page-loading-inner > span {
-		 display: block;
-		 font-family: "Inter", sans-serif;
-		 font-size: 1rem;
-		 font-weight: normal;
-		 color: #6f788b;
-	     }
-	     [data-bs-theme="dark"] .page-loading-inner > span {
-		 color: #fff;
-		 opacity: .6;
-	     }
-	     .page-spinner {
-		 display: inline-block;
-		 width: 2.75rem;
-		 height: 2.75rem;
-		 margin-bottom: .75rem;
-		 vertical-align: text-bottom;
-		 background-color: #d7dde2; 
-		 border-radius: 50%;
-		 opacity: 0;
-		 -webkit-animation: spinner .75s linear infinite;
-		 animation: spinner .75s linear infinite;
-	     }
-	     [data-bs-theme="dark"] .page-spinner {
-		 background-color: rgba(255,255,255,.25);
-	     }
-	     @-webkit-keyframes spinner {
-		 0% {
-		     -webkit-transform: scale(0);
-		     transform: scale(0);
-		 }
-		 50% {
-		     opacity: 1;
-		     -webkit-transform: none;
-		     transform: none;
-		 }
-	     }
-	     @keyframes spinner {
-		 0% {
-		     -webkit-transform: scale(0);
-		     transform: scale(0);
-		 }
-		 50% {
-		     opacity: 1;
-		     -webkit-transform: none;
-		     transform: none;
-		 }
-	     }
+	   	.page-loading {
+	   		position: fixed;
+	   		top: 0;
+	   		right: 0;
+	   		bottom: 0;
+	   		left: 0;
+	   		width: 100%;
+	   		height: 100%;
+	   		-webkit-transition: all .4s .2s ease-in-out;
+	   		transition: all .4s .2s ease-in-out;
+	   		background-color: #fff;
+	   		opacity: 0;
+	   		visibility: hidden;
+	   		z-index: 9999;
+	   	}
+	   	[data-bs-theme="dark"] .page-loading {
+	   		background-color: #121519;
+	   	}
+	   	.page-loading.active {
+	   		opacity: 1;
+	   		visibility: visible;
+	   	}
+	   	.page-loading-inner {
+	   		position: absolute;
+	   		top: 50%;
+	   		left: 0;
+	   		width: 100%;
+	   		text-align: center;
+	   		-webkit-transform: translateY(-50%);
+	   		transform: translateY(-50%);
+	   		-webkit-transition: opacity .2s ease-in-out;
+	   		transition: opacity .2s ease-in-out;
+	   		opacity: 0;
+	   	}
+	   	.page-loading.active > .page-loading-inner {
+	   		opacity: 1;
+	   	}
+	   	.page-loading-inner > span {
+	   		display: block;
+	   		font-family: "Inter", sans-serif;
+	   		font-size: 1rem;
+	   		font-weight: normal;
+	   		color: #6f788b;
+	   	}
+	   	[data-bs-theme="dark"] .page-loading-inner > span {
+	   		color: #fff;
+	   		opacity: .6;
+	   	}
+	   	.page-spinner {
+	   		display: inline-block;
+	   		width: 2.75rem;
+	   		height: 2.75rem;
+	   		margin-bottom: .75rem;
+	   		vertical-align: text-bottom;
+	   		background-color: #d7dde2; 
+	   		border-radius: 50%;
+	   		opacity: 0;
+	   		-webkit-animation: spinner .75s linear infinite;
+	   		animation: spinner .75s linear infinite;
+	   	}
+	   	[data-bs-theme="dark"] .page-spinner {
+	   		background-color: rgba(255,255,255,.25);
+	   	}
+	   	@-webkit-keyframes spinner {
+	   		0% {
+	   			-webkit-transform: scale(0);
+	   			transform: scale(0);
+	   		}
+	   		50% {
+	   			opacity: 1;
+	   			-webkit-transform: none;
+	   			transform: none;
+	   		}
+	   	}
+	   	@keyframes spinner {
+	   		0% {
+	   			-webkit-transform: scale(0);
+	   			transform: scale(0);
+	   		}
+	   		50% {
+	   			opacity: 1;
+	   			-webkit-transform: none;
+	   			transform: none;
+	   		}
+	   	}
 	   </style>
 
 	   <!-- Page loading scripts -->
 	   <script>
-	     (function () {
-		 window.onload = function () {
-		     const preloader = document.querySelector('.page-loading')
-		     preloader.classList.remove('active')
-		     setTimeout(function () {
-			 preloader.remove()
-		     }, 1500)
-		 }
-	     })()
+	   	(function () {
+	   		window.onload = function () {
+	   			const preloader = document.querySelector('.page-loading')
+	   			preloader.classList.remove('active')
+	   			setTimeout(function () {
+	   				preloader.remove()
+	   			}, 1500)
+	   		}
+	   	})()
 	   </script>
-  </head>
+	 </head>
 
 
-  <!-- Body -->
-  <body class="bg-secondary">
+	 <!-- Body -->
+	 <body class="bg-secondary">
 
 
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-        <div class="page-spinner"></div>
-        <span>Loading...</span>
-      </div>
-    </div>
+	 	<!-- Page loading spinner -->
+	 	<div class="page-loading active">
+	 		<div class="page-loading-inner">
+	 			<div class="page-spinner"></div>
+	 			<span>Loading...</span>
+	 		</div>
+	 	</div>
 
 
-    <!-- Page wrapper -->
-    <main class="page-wrapper">
+	 	<!-- Page wrapper -->
+	 	<main class="page-wrapper">
 
-      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-expand-lg fixed-top">
-        <div class="container">
+	 		<!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+	 		<header class="navbar navbar-expand-lg fixed-top">
+	 			<div class="container">
 
-          <!-- Navbar brand (Logo) -->
-          <a class="navbar-brand pe-sm-3" href="index.html">
-            bRAGs
-          </a>
+	 				<!-- Navbar brand (Logo) -->
+	 				<a class="navbar-brand pe-sm-3" href="index.html">
+	 					bRAGs
+	 				</a>
 
-          <!-- Theme switcher -->
-          <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-            <input class="form-check-input" type="checkbox" id="theme-mode">
-            <label class="form-check-label" for="theme-mode">
-              <i class="ai-sun fs-lg"></i>
-            </label>
-            <label class="form-check-label" for="theme-mode">
-              <i class="ai-moon fs-lg"></i>
-            </label>
-          </div>
+	 				<!-- Theme switcher -->
+	 				<div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+	 					<input class="form-check-input" type="checkbox" id="theme-mode">
+	 					<label class="form-check-label" for="theme-mode">
+	 						<i class="ai-sun fs-lg"></i>
+	 					</label>
+	 					<label class="form-check-label" for="theme-mode">
+	 						<i class="ai-moon fs-lg"></i>
+	 					</label>
+	 				</div>
 
-          <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" rel="noopener">
-            <i class="ai-phone fs-xl me-2 ms-n1"></i>
-            Contact Us
-          </a>
+	 				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" rel="noopener">
+	 					<i class="ai-phone fs-xl me-2 ms-n1"></i>
+	 					Contact Us
+	 				</a>
 
-          <!-- Mobile menu toggler (Hamburger) -->
-          <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+	 				<!-- Mobile menu toggler (Hamburger) -->
+	 				<button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+	 					<span class="navbar-toggler-icon"></span>
+	 				</button>
 
-          <!-- Navbar collapse (Main navigation) -->
-          <nav class="collapse navbar-collapse" id="navbarNav">
-            <div class="d-sm-none p-3 mt-n3">
-              <a class="btn btn-primary w-100 mb-1" href="#contact" target="_blank" rel="noopener">
-                <i class="ai-phone fs-xl me-2 ms-n1"></i>
-                Contact Us
-              </a>
-            </div>
-          </nav>
-        </div>
-      </header>
+	 				<!-- Navbar collapse (Main navigation) -->
+	 				<nav class="collapse navbar-collapse" id="navbarNav">
+	 					<div class="d-sm-none p-3 mt-n3">
+	 						<a class="btn btn-primary w-100 mb-1" href="#contact" target="_blank" rel="noopener">
+	 							<i class="ai-phone fs-xl me-2 ms-n1"></i>
+	 							Contact Us
+	 						</a>
+	 					</div>
+	 				</nav>
+	 			</div>
+	 		</header>
 
 
-      <!-- Hero -->
-      <section class="overflow-hidden">
-        <div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
-          <div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
-            <div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
-              <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
-                <div class="parallax-layer" data-depth="0.1">
-                  <img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-5 order-lg-1">
-              <h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3">AI Powered Tools At Your Finger Tips!
-              </h1>
-              <p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-5" style="max-width: 420px;">We are a team of experienced professionals building tools, now embedded with AI.</p>
-              <div class="input-group mx-auto mx-lg-0" style="max-width: 420px;">
-                <span class="input-group-text text-body-secondary">
-                  <i class="ai-mail"></i>
-                </span>
-                <input class="form-control" type="email" placeholder="Enter your email">
-                <a class="btn btn-primary" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+	 		<!-- Hero -->
+	 		<section class="overflow-hidden">
+	 			<div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
+	 				<div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
+	 					<div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
+	 						<div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
+	 							<div class="parallax-layer" data-depth="0.1">
+	 								<img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer">
+	 							</div>
+	 						</div>
+	 					</div>
+	 					<div class="col-lg-5 order-lg-1">
+	 						<h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3">AI Powered Tools At Your Finger Tips!
+	 						</h1>
+	 						<p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-5" style="max-width: 420px;">We are a team of experienced professionals building tools, now embedded with AI.</p>
+	 						<div class="input-group mx-auto mx-lg-0" style="max-width: 420px;">
+	 							<span class="input-group-text text-body-secondary">
+	 								<i class="ai-mail"></i>
+	 							</span>
+	 							<input class="form-control" type="email" placeholder="Enter your email">
+	 							<a class="btn btn-primary" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
+	 						</div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</section>
 
-      <section class="overflow-hidden py-5 my-md-2 my-xl-4 my-xxl-5">
-	<div class="container py-2 py-sm-4 py-lg-5">
-	  <h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Our Product</h2>
+	 		<section class="overflow-hidden py-5 my-md-2 my-xl-4 my-xxl-5">
+	 			<div class="container py-2 py-sm-4 py-lg-5">
+	 				<h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Our Product</h2>
 
-	  <!-- Step1 -->
-	  <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <img class="d-dark-mode-none" src="assets/img/custom/docs_white.svg" width="325" alt="Image">
-              <img class="d-none d-dark-mode-block" src="assets/img/custom/docs_black.svg" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <div class="pe-md-4 pe-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
-		<h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it!</p>
-              </div>
-	    </div>
-	  </div>
+	 				<!-- Step1 -->
+	 				<div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+	 					<div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<img class="d-dark-mode-none" src="assets/img/custom/docs_white.svg" width="325" alt="Image">
+	 						<img class="d-none d-dark-mode-block" src="assets/img/custom/docs_black.svg" width="325" alt="Image">
+	 					</div>
+	 					<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<div class="pe-md-4 pe-lg-0">
+	 							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
+	 							<h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
+	 							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it!</p>
+	 						</div>
+	 					</div>
+	 				</div>
 
-	  <!-- Arrow -->
-	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-	    <svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
-              <path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-              <path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
-              <defs>
-		<linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
-		  <stop offset="0" stop-color="currentColor"></stop>
-		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-		</linearGradient>
-              </defs>
-	    </svg>
-	  </div>
+	 				<!-- Arrow -->
+	 				<div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+	 					<svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
+	 						<path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+	 						<path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
+	 						<defs>
+	 							<linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
+	 								<stop offset="0" stop-color="currentColor"></stop>
+	 								<stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+	 							</linearGradient>
+	 						</defs>
+	 					</svg>
+	 				</div>
 
-	  <!-- Step -->
-	  <div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-	    <div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <img class="d-dark-mode-none" src="assets/img/custom/brags_white.svg" width="325" alt="Image">
-              <img class="d-none d-dark-mode-block" src="assets/img/custom/brags_black.svg" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <div class="ps-md-4 ps-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
-		<h3 class="h2 mb-3 mb-lg-4">bRAGs Processes Documents in Seconds, Sit Tight.</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, Crunch, Crunch!</p>     
-              </div>
-	    </div>
-	  </div>
+	 				<!-- Step -->
+	 				<div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+	 					<div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<img class="d-dark-mode-none" src="assets/img/custom/brags_white.svg" width="325" alt="Image">
+	 						<img class="d-none d-dark-mode-block" src="assets/img/custom/brags_black.svg" width="325" alt="Image">
+	 					</div>
+	 					<div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<div class="ps-md-4 ps-lg-0">
+	 							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
+	 							<h3 class="h2 mb-3 mb-lg-4">bRAGs Processes Documents in Seconds, Sit Tight.</h3>
+	 							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, Crunch, Crunch!</p>
+	 							<ul class="list-unstyled mb-0">
+	 								<li class="d-flex pt-1 mt-2">
+	 									<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+	 									Processing Done Locally
+	 								</li>
+	 								<li class="d-flex pt-1 mt-2">
+	 									<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+	 									Documents Are Not Made Public
+	 								</li>
+	 								<li class="d-flex pt-1 mt-2">
+	 									<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+	 									Confidential Data is Confidential
+	 								</li>
+	 							</ul>     
+	 						</div>
+	 					</div>
+	 				</div>
 
-	  <!-- Arrow -->
-	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-	    <svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
-              <path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
-              <path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-              <defs>
-		<linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
-		  <stop offset="0" stop-color="currentColor"></stop>
-		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-		</linearGradient>
-              </defs>
-	    </svg>
-	  </div>
+	 				<!-- Arrow -->
+	 				<div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+	 					<svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
+	 						<path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
+	 						<path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+	 						<defs>
+	 							<linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
+	 								<stop offset="0" stop-color="currentColor"></stop>
+	 								<stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+	 							</linearGradient>
+	 						</defs>
+	 					</svg>
+	 				</div>
 
-	  <!-- Step -->
-	  <div class="row align-items-top position-relative">
-	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <img class="d-dark-mode-none" src="assets/img/custom/query_white.svg" width="325" alt="Image">
-              <img class="d-none d-dark-mode-block" src="assets/img/custom/query_black.svg" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-              <div class="pe-md-4 pe-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
-		<h3 class="h2 mb-3 mb-lg-4">Query</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select that document you want to query and Query away!</p>
-              </div>
-	    </div>
-	  </div>
-	</div>
-      </section>
+	 				<!-- Step -->
+	 				<div class="row align-items-top position-relative">
+	 					<div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<img class="d-dark-mode-none" src="assets/img/custom/query_white.svg" width="325" alt="Image">
+	 						<img class="d-none d-dark-mode-block" src="assets/img/custom/query_black.svg" width="325" alt="Image">
+	 					</div>
+	 					<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+	 						<div class="pe-md-4 pe-lg-0">
+	 							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
+	 							<h3 class="h2 mb-3 mb-lg-4">Query</h3>
+	 							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select that document you want to query and Query away!</p>
+	 						</div>
+	 					</div>
+	 				</div>
+	 			</div>
+	 		</section>
 
-      <!-- Services grid -->
-      <section class="container py-5">
-        <h2 class="h1 text-center">Our Services</h2>
-        <p class="text-center pb-4 mb-2 mb-lg-3">We can build Retrieval-Augmented Generation(RAG) frameworks that can provide you with a wide range of services</p>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+	 		<!-- Services grid -->
+	 		<section class="container py-5">
+	 			<h2 class="h1 text-center">Our Services</h2>
+	 			<p class="text-center pb-4 mb-2 mb-lg-3">We can build Retrieval-Augmented Generation(RAG) frameworks that can provide you with a wide range of services</p>
+	 			<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
 
-          <!-- Item -->
-          <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-info">
-                    <path d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">AI powered Continuous Integration (CI)/ Continuous Delivery (CD) pipelines</h3>
-                <p class="card-text">Still stuck in the old ways of building and testing your code and looking to revamp it? We can architect the next generation CI/CD pipelines by employing right AI agents.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+	 				<!-- Item -->
+	 				<div class="col">
+	 					<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+	 						<div class="card-body pb-0">
+	 							<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+	 								<g class="text-info">
+	 									<path d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z" fill="currentColor"></path>
+	 								</g>
+	 								<g class="text-primary">
+	 									<path d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z" fill="currentColor"></path>
+	 								</g>
+	 							</svg>
+	 							<h3 class="h4 card-title mt-0">AI powered Continuous Integration (CI)/ Continuous Delivery (CD) pipelines</h3>
+	 							<p class="card-text">Still stuck in the old ways of building and testing your code and looking to revamp it? We can architect the next generation CI/CD pipelines by employing right AI agents.</p>
+	 						</div>
+	 						<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -335,20 +349,20 @@
 
           <!-- Item -->
           <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-info">
-                    <path d="M25,25h15v15H25V25z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M10,20c0-5.5,4.5-10,10-10s10,4.5,10,10h10C40,9,31,0,20,0S0,9,0,20s9,20,20,20V30C14.5,30,10,25.5,10,20z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">Software QA Automation</h3>
-                <p class="card-text">Dont let the most important part of your Software Development Life Cycle(SDLC) be manual. If there are logs to be sifted through and made sense of -- then you can lean on our AI agents to boost your productivity.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M25,25h15v15H25V25z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M10,20c0-5.5,4.5-10,10-10s10,4.5,10,10h10C40,9,31,0,20,0S0,9,0,20s9,20,20,20V30C14.5,30,10,25.5,10,20z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Software QA Automation</h3>
+          			<p class="card-text">Dont let the most important part of your Software Development Life Cycle(SDLC) be manual. If there are logs to be sifted through and made sense of -- then you can lean on our AI agents to boost your productivity.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -358,23 +372,23 @@
 
           <!-- Item -->
           <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-info">
-                    <path d="M34.9811 16.2655C34.3635 26.3194 26.3194 34.3634 16.2656 34.981V40H40V16.2655H34.9811Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-info">
-                    <path d="M15.0195 30.0413C23.3152 30.0413 30.0403 23.3163 30.0403 15.0205H15.0195V30.0413Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M29.1953 10.0415C27.141 4.19328 21.571 0 15.0208 0C6.725 0 0 6.725 0 15.0208C0 21.571 4.19328 27.141 10.0415 29.1953V10.0415H29.1953Z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">Embedded Systems</h3>
-                <p class="card-text">If you have a matrix of embedded systems or devices running a suite of tests, then you have a lot of logs. Let log analysis be automated via RAG based automated systems. We can help you!</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M34.9811 16.2655C34.3635 26.3194 26.3194 34.3634 16.2656 34.981V40H40V16.2655H34.9811Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-info">
+          					<path d="M15.0195 30.0413C23.3152 30.0413 30.0403 23.3163 30.0403 15.0205H15.0195V30.0413Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M29.1953 10.0415C27.141 4.19328 21.571 0 15.0208 0C6.725 0 0 6.725 0 15.0208C0 21.571 4.19328 27.141 10.0415 29.1953V10.0415H29.1953Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Embedded Systems</h3>
+          			<p class="card-text">If you have a matrix of embedded systems or devices running a suite of tests, then you have a lot of logs. Let log analysis be automated via RAG based automated systems. We can help you!</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -384,23 +398,23 @@
 
           <!-- Item -->
           <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-primary">
-                    <path d="M19.9999 0C11.1313 0 3.61211 5.77313 0.992188 13.7659H39.0077C36.3877 5.77313 28.8686 0 19.9999 0Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-info">
-                    <path d="M7.29328 16.1094H0.379453C0.131328 17.368 0 18.6684 0 19.9998C0 26.9291 3.52437 33.0348 8.87797 36.6237L18.3427 27.1589L7.29328 16.1094Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M10.9688 37.848C13.6819 39.2238 16.7505 39.9998 20.0007 39.9998C31.0464 39.9998 40.0007 31.0455 40.0007 19.9998C40.0007 18.6684 39.8694 17.3679 39.6213 16.1094H32.7074L10.9688 37.848Z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">Life Sciences</h3>
-                <p class="card-text">Do you have a lot of documents, test reports etc. that could use of the power of Large Language Models(LLMs)? Afraid of compromising the confidentiality of the materials? We can help build a custom RAG based framework without the need for a suite of AI/ML engineers.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-primary">
+          					<path d="M19.9999 0C11.1313 0 3.61211 5.77313 0.992188 13.7659H39.0077C36.3877 5.77313 28.8686 0 19.9999 0Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-info">
+          					<path d="M7.29328 16.1094H0.379453C0.131328 17.368 0 18.6684 0 19.9998C0 26.9291 3.52437 33.0348 8.87797 36.6237L18.3427 27.1589L7.29328 16.1094Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M10.9688 37.848C13.6819 39.2238 16.7505 39.9998 20.0007 39.9998C31.0464 39.9998 40.0007 31.0455 40.0007 19.9998C40.0007 18.6684 39.8694 17.3679 39.6213 16.1094H32.7074L10.9688 37.848Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Life Sciences</h3>
+          			<p class="card-text">Do you have a lot of documents, test reports etc. that could use of the power of Large Language Models(LLMs)? Afraid of compromising the confidentiality of the materials? We can help build a custom RAG based framework without the need for a suite of AI/ML engineers.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -410,23 +424,23 @@
 
           <!-- Item -->
           <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-primary">
-                    <path d="M25.2791 12.7502C28.1954 9.83389 28.1954 5.10556 25.2791 2.18921C22.3627 -0.727136 17.6344 -0.727137 14.718 2.18921C11.8017 5.10556 11.8017 9.83389 14.718 12.7502C17.6344 15.6666 22.3627 15.6666 25.2791 12.7502Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-info">
-                    <path d="M14.6859 29.3056C15.6559 27.0123 16.9202 24.8838 18.4577 22.9467C13.8666 17.9802 7.29664 14.8701 0 14.8701V40.0004H12.5259C12.5259 36.2925 13.2527 32.6942 14.6859 29.3056Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M40.0014 40.0004V14.8701C26.1223 14.8701 14.8711 26.1214 14.8711 40.0004H40.0014Z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">Law Firms</h3>
-                <p class="card-text">Let our RAG solutions augment the efficiency of your paralegals by providing you easy to use tools.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-primary">
+          					<path d="M25.2791 12.7502C28.1954 9.83389 28.1954 5.10556 25.2791 2.18921C22.3627 -0.727136 17.6344 -0.727137 14.718 2.18921C11.8017 5.10556 11.8017 9.83389 14.718 12.7502C17.6344 15.6666 22.3627 15.6666 25.2791 12.7502Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-info">
+          					<path d="M14.6859 29.3056C15.6559 27.0123 16.9202 24.8838 18.4577 22.9467C13.8666 17.9802 7.29664 14.8701 0 14.8701V40.0004H12.5259C12.5259 36.2925 13.2527 32.6942 14.6859 29.3056Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M40.0014 40.0004V14.8701C26.1223 14.8701 14.8711 26.1214 14.8711 40.0004H40.0014Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Law Firms</h3>
+          			<p class="card-text">Let our RAG solutions augment the efficiency of your paralegals by providing you easy to use tools.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -436,20 +450,20 @@
 
           <!-- Item -->
           <div class="col">
-            <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-              <div class="card-body pb-0">
-                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-                  <g class="text-info">
-                    <path d="M20.0004 36.0226L10.982 21.3535C9.42594 23.3156 8.49609 25.7968 8.49609 28.4955C8.49609 34.8492 13.6467 39.9998 20.0004 39.9998C26.3541 39.9998 31.5047 34.8492 31.5047 28.4955C31.5047 25.7969 30.5749 23.3156 29.0188 21.3535L20.0004 36.0226Z" fill="currentColor"></path>
-                  </g>
-                  <g class="text-primary">
-                    <path d="M39.3962 0H0.605469L20.0009 31.5477L39.3962 0ZM25.7601 7.62359L20.0009 16.9914L14.2416 7.62359H25.7601Z" fill="currentColor"></path>
-                  </g>
-                </svg>
-                <h3 class="h4 card-title mt-0">Finance</h3>
-                <p class="card-text">AI can revolutinize how you ingest the information in the documents during your quarterly and yearly schedules.</p>
-              </div>
-              <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M20.0004 36.0226L10.982 21.3535C9.42594 23.3156 8.49609 25.7968 8.49609 28.4955C8.49609 34.8492 13.6467 39.9998 20.0004 39.9998C26.3541 39.9998 31.5047 34.8492 31.5047 28.4955C31.5047 25.7969 30.5749 23.3156 29.0188 21.3535L20.0004 36.0226Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M39.3962 0H0.605469L20.0009 31.5477L39.3962 0ZM25.7601 7.62359L20.0009 16.9914L14.2416 7.62359H25.7601Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Finance</h3>
+          			<p class="card-text">AI can revolutinize how you ingest the information in the documents during your quarterly and yearly schedules.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
@@ -461,23 +475,23 @@
 
       <!-- Contact details -->
       <section class="bg-secondary py-5" id="contact">
-        <div class="container py-lg-3 py-xl-4 py-xxl-5">
-          <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 py-sm-2 py-md-3 py-lg-4">
-            <div class="col">
-              <h2 class="h4 mb-4">Contact Us</h2>
-              <ul class="list-unstyled mb-0">
-                <li class="nav flex-nowrap mb-3">
-                  <i class="ai-phone lead text-primary me-2"></i>
-                  <a class="nav-link fw-normal p-0 mt-n1" href="tel:+14084770823">+1&nbsp;(408)&nbsp;477&nbsp;0823</a>
-                </li>
-                <li class="nav flex-nowrap mb-3">
-                  <i class="ai-mail lead text-primary me-2"></i>
-                  <a class="nav-link fw-normal p-0 mt-n1" href="mailto:praveen@brags.ai">praveen@brags.ai</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      	<div class="container py-lg-3 py-xl-4 py-xxl-5">
+      		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 py-sm-2 py-md-3 py-lg-4">
+      			<div class="col">
+      				<h2 class="h4 mb-4">Contact Us</h2>
+      				<ul class="list-unstyled mb-0">
+      					<li class="nav flex-nowrap mb-3">
+      						<i class="ai-phone lead text-primary me-2"></i>
+      						<a class="nav-link fw-normal p-0 mt-n1" href="tel:+14084770823">+1&nbsp;(408)&nbsp;477&nbsp;0823</a>
+      					</li>
+      					<li class="nav flex-nowrap mb-3">
+      						<i class="ai-mail lead text-primary me-2"></i>
+      						<a class="nav-link fw-normal p-0 mt-n1" href="mailto:praveen@brags.ai">praveen@brags.ai</a>
+      					</li>
+      				</ul>
+      			</div>
+      		</div>
+      	</div>
       </section>
 
     </main>
@@ -485,46 +499,46 @@
 
     <!-- Footer -->
     <footer class="footer bg-dark pb-3 pt-sm-3 py-md-4 py-lg-5" data-bs-theme="dark">
-      <div class="container pb-4 pt-5">
-        <div class="d-md-flex align-items-center justify-content-between pb-1 pb-md-0 mb-4 mb-md-5">
-          <nav class="nav justify-content-center justify-content-md-start pb-sm-2 pb-md-0 mb-4 mb-md-0 ms-md-n3">
-            <a class="nav-link py-1 px-0 mx-3" href="#">Services</a>
+    	<div class="container pb-4 pt-5">
+    		<div class="d-md-flex align-items-center justify-content-between pb-1 pb-md-0 mb-4 mb-md-5">
+    			<nav class="nav justify-content-center justify-content-md-start pb-sm-2 pb-md-0 mb-4 mb-md-0 ms-md-n3">
+    				<a class="nav-link py-1 px-0 mx-3" href="#">Services</a>
 	    <!--             <a class="nav-link py-1 px-0 mx-3" href="#">Reviews</a>
 			     <a class="nav-link py-1 px-0 mx-3" href="#">Team</a>
 			     <a class="nav-link py-1 px-0 mx-3" href="#">Blog</a> -->
 			     <a class="nav-link py-1 px-0 mx-3" href="#contact">Contact</a>
-          </nav>
-          <div class="d-flex justify-content-center justify-content-md-start me-md-n2">
-            <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle mx-2" href="https://www.linkedin.com/in/praveen-samudrala/" aria-label="LinkedIn">
-              <i class="ai-linkedin"></i>
-            </a>
-          </div>
-        </div>
-        <div class="d-md-flex align-items-center justify-content-between text-center text-md-start">
-          <a class="nav-link d-inline-block text-body-secondary fs-sm text-decoration-none order-md-2 py-1 px-0 mb-3 mb-md-0" href="#">Privacy policy</a>
-          <p class="nav fs-sm order-md-1 mb-0">
-            <span class="text-body-secondary">&copy; All rights reserved.</span>
-          </p>
-        </div>
-      </div>
-    </footer>
+			   </nav>
+			   <div class="d-flex justify-content-center justify-content-md-start me-md-n2">
+			   	<a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle mx-2" href="https://www.linkedin.com/in/praveen-samudrala/" aria-label="LinkedIn">
+			   		<i class="ai-linkedin"></i>
+			   	</a>
+			   </div>
+			 </div>
+			 <div class="d-md-flex align-items-center justify-content-between text-center text-md-start">
+			 	<a class="nav-link d-inline-block text-body-secondary fs-sm text-decoration-none order-md-2 py-1 px-0 mb-3 mb-md-0" href="#">Privacy policy</a>
+			 	<p class="nav fs-sm order-md-1 mb-0">
+			 		<span class="text-body-secondary">&copy; All rights reserved.</span>
+			 	</p>
+			 </div>
+			</div>
+		</footer>
 
 
-    <!-- Back to top button -->
-    <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
-      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
-      </svg>
-      <i class="ai-arrow-up"></i>
-    </a>
+		<!-- Back to top button -->
+		<a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+			<svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+			</svg>
+			<i class="ai-arrow-up"></i>
+		</a>
 
 
-    <!-- Vendor scripts: JS libraries and plugins -->
-    <script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/aos/dist/aos.js"></script>
+		<!-- Vendor scripts: JS libraries and plugins -->
+		<script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+		<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+		<script src="assets/vendor/aos/dist/aos.js"></script>
 
-    <!-- Bootstrap + Theme scripts -->
-    <script src="assets/js/theme.min.js"></script>
-  </body>
-</html>
+		<!-- Bootstrap + Theme scripts -->
+		<script src="assets/js/theme.min.js"></script>
+	</body>
+	</html>
