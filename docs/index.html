@@ -14,128 +14,128 @@
 
     <!-- Webmanifest + Favicon / App icons -->
     <link rel="manifest" href="/manifest.json">
-  <!--   <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
-    <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png"> -->
-        
-    <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+    <!--   <link rel="icon" type="image/png" href="assets/app-icons/icon-32x32.png" sizes="32x32">
+	   <link rel="apple-touch-icon" href="assets/app-icons/icon-180x180.png"> -->
+           
+	   <!-- Theme switcher (color modes) -->
+	   <script src="assets/js/theme-switcher.js"></script>
 
-    <!-- Import Google font (Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+	   <!-- Import Google font (Inter) -->
+	   <link rel="preconnect" href="https://fonts.googleapis.com">
+	   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
 
-    <!-- Vendor styles -->
-    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+	   <!-- Vendor styles -->
+	   <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+	   <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
 
-    <!-- Font icons -->
-    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+	   <!-- Font icons -->
+	   <link rel="stylesheet" href="assets/icons/around-icons.min.css">
 
-    <!-- Theme styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+	   <!-- Theme styles + Bootstrap -->
+	   <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
-    <!-- Page loading styles -->
-    <style>
-      .page-loading {
-        position: fixed;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transition: all .4s .2s ease-in-out;
-        transition: all .4s .2s ease-in-out;
-        background-color: #fff;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 9999;
-      }
-      [data-bs-theme="dark"] .page-loading {
-        background-color: #121519;
-      }
-      .page-loading.active {
-        opacity: 1;
-        visibility: visible;
-      }
-      .page-loading-inner {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        -webkit-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-transition: opacity .2s ease-in-out;
-        transition: opacity .2s ease-in-out;
-        opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-        opacity: 1;
-      }
-      .page-loading-inner > span {
-        display: block;
-        font-family: "Inter", sans-serif;
-        font-size: 1rem;
-        font-weight: normal;
-        color: #6f788b;
-      }
-      [data-bs-theme="dark"] .page-loading-inner > span {
-        color: #fff;
-        opacity: .6;
-      }
-      .page-spinner {
-        display: inline-block;
-        width: 2.75rem;
-        height: 2.75rem;
-        margin-bottom: .75rem;
-        vertical-align: text-bottom;
-        background-color: #d7dde2; 
-        border-radius: 50%;
-        opacity: 0;
-        -webkit-animation: spinner .75s linear infinite;
-        animation: spinner .75s linear infinite;
-      }
-      [data-bs-theme="dark"] .page-spinner {
-        background-color: rgba(255,255,255,.25);
-      }
-      @-webkit-keyframes spinner {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0);
-        }
-        50% {
-          opacity: 1;
-          -webkit-transform: none;
-          transform: none;
-        }
-      }
-      @keyframes spinner {
-        0% {
-          -webkit-transform: scale(0);
-          transform: scale(0);
-        }
-        50% {
-          opacity: 1;
-          -webkit-transform: none;
-          transform: none;
-        }
-      }
-    </style>
+	   <!-- Page loading styles -->
+	   <style>
+	     .page-loading {
+		 position: fixed;
+		 top: 0;
+		 right: 0;
+		 bottom: 0;
+		 left: 0;
+		 width: 100%;
+		 height: 100%;
+		 -webkit-transition: all .4s .2s ease-in-out;
+		 transition: all .4s .2s ease-in-out;
+		 background-color: #fff;
+		 opacity: 0;
+		 visibility: hidden;
+		 z-index: 9999;
+	     }
+	     [data-bs-theme="dark"] .page-loading {
+		 background-color: #121519;
+	     }
+	     .page-loading.active {
+		 opacity: 1;
+		 visibility: visible;
+	     }
+	     .page-loading-inner {
+		 position: absolute;
+		 top: 50%;
+		 left: 0;
+		 width: 100%;
+		 text-align: center;
+		 -webkit-transform: translateY(-50%);
+		 transform: translateY(-50%);
+		 -webkit-transition: opacity .2s ease-in-out;
+		 transition: opacity .2s ease-in-out;
+		 opacity: 0;
+	     }
+	     .page-loading.active > .page-loading-inner {
+		 opacity: 1;
+	     }
+	     .page-loading-inner > span {
+		 display: block;
+		 font-family: "Inter", sans-serif;
+		 font-size: 1rem;
+		 font-weight: normal;
+		 color: #6f788b;
+	     }
+	     [data-bs-theme="dark"] .page-loading-inner > span {
+		 color: #fff;
+		 opacity: .6;
+	     }
+	     .page-spinner {
+		 display: inline-block;
+		 width: 2.75rem;
+		 height: 2.75rem;
+		 margin-bottom: .75rem;
+		 vertical-align: text-bottom;
+		 background-color: #d7dde2; 
+		 border-radius: 50%;
+		 opacity: 0;
+		 -webkit-animation: spinner .75s linear infinite;
+		 animation: spinner .75s linear infinite;
+	     }
+	     [data-bs-theme="dark"] .page-spinner {
+		 background-color: rgba(255,255,255,.25);
+	     }
+	     @-webkit-keyframes spinner {
+		 0% {
+		     -webkit-transform: scale(0);
+		     transform: scale(0);
+		 }
+		 50% {
+		     opacity: 1;
+		     -webkit-transform: none;
+		     transform: none;
+		 }
+	     }
+	     @keyframes spinner {
+		 0% {
+		     -webkit-transform: scale(0);
+		     transform: scale(0);
+		 }
+		 50% {
+		     opacity: 1;
+		     -webkit-transform: none;
+		     transform: none;
+		 }
+	     }
+	   </style>
 
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-        window.onload = function () {
-          const preloader = document.querySelector('.page-loading')
-          preloader.classList.remove('active')
-          setTimeout(function () {
-            preloader.remove()
-          }, 1500)
-        }
-      })()
-    </script>
+	   <!-- Page loading scripts -->
+	   <script>
+	     (function () {
+		 window.onload = function () {
+		     const preloader = document.querySelector('.page-loading')
+		     preloader.classList.remove('active')
+		     setTimeout(function () {
+			 preloader.remove()
+		     }, 1500)
+		 }
+	     })()
+	   </script>
   </head>
 
 
@@ -192,211 +192,6 @@
 
           <!-- Navbar collapse (Main navigation) -->
           <nav class="collapse navbar-collapse" id="navbarNav">
-<!--             <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" aria-expanded="false">Landings</a>
-                <div class="dropdown-menu overflow-hidden p-0">
-                  <div class="d-lg-flex">
-                    <div class="mega-dropdown-column pt-1 pt-lg-3 pb-lg-4">
-                      <ul class="list-unstyled mb-0">
-                        <li>
-                          <a class="dropdown-item" href="index.html">Template Intro Page</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 rounded-3 rounded-start-0" style="background-image: url(assets/img/megamenu/landings.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-mobile-app-showcase.html">Mobile App Showcase</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/mobile-app.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-product.html">Product Landing</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/product-landing.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-saas-v1.html">SaaS v.1</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-1.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-saas-v2.html">SaaS v.2</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-2.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-saas-v3.html">SaaS v.3</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-3.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-saas-v4.html">
-                            SaaS v.4
-                            <span class="text-danger fs-xs ms-2">New</span>
-                          </a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/saas-4.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-shop-v1.html">Shop Homepage v.1</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/shop-homepage-1.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-shop-v2.html">
-                            Shop Homepage v.2
-                            <span class="text-danger fs-xs ms-2">New</span>
-                          </a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/shop-homepage-2.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-marketing-agency.html">Marketing Agency</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/marketing-agency.jpg);"></span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="mega-dropdown-column pb-2 pt-lg-3 pb-lg-4">
-                      <ul class="list-unstyled mb-0">
-                        <li>
-                          <a class="dropdown-item" href="landing-creative-agency.html">Creative Agency</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/creative-agency.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-conference.html">Conference (Event)</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/conference.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-web-studio.html">Web Studio</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/web-studio.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-corporate.html">Corporate</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/corporate.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-insurance.html">
-                            Insurance Company
-                            <span class="text-danger fs-xs ms-2">New</span>
-                          </a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/insurance.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-business-consulting.html">Business Consulting</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/business-consulting.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-coworking-space.html">Coworking Space</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/coworking.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-yoga-studio.html">Yoga Studio</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/yoga-studio.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-influencer.html">Influencer</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/influencer.jpg);"></span>
-                        </li>
-                        <li>
-                          <a class="dropdown-item" href="landing-blog.html">Blog Homepage</a>
-                          <span class="mega-dropdown-column position-absolute top-0 end-0 h-100 bg-size-cover bg-repeat-0 z-2 opacity-0" style="background-image: url(assets/img/megamenu/blog-homepage.jpg);"></span>
-                        </li>
-                      </ul>
-                    </div>
-                    <div class="mega-dropdown-column position-relative border-start z-3"></div>
-                  </div>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Pages</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Portfolio</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="portfolio-list-v1.html">List View v.1</a></li>
-                      <li><a class="dropdown-item" href="portfolio-list-v2.html">List View v.2</a></li>
-                      <li><a class="dropdown-item" href="portfolio-grid-v1.html">Grid View v.1</a></li>
-                      <li><a class="dropdown-item" href="portfolio-grid-v2.html">Grid View v.2</a></li>
-                      <li><a class="dropdown-item" href="portfolio-slider.html">Slider View</a></li>
-                      <li><a class="dropdown-item" href="portfolio-single-v1.html">Single Project v.1</a></li>
-                      <li><a class="dropdown-item" href="portfolio-single-v2.html">Single Project v.2</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="shop-catalog.html">Catalog (Listing)</a></li>
-                      <li><a class="dropdown-item" href="shop-single.html">Product Page</a></li>
-                      <li><a class="dropdown-item" href="shop-checkout.html">Checkout</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Blog</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="blog-grid-sidebar.html">Grid View with Sidebar</a></li>
-                      <li><a class="dropdown-item" href="blog-grid.html">Grid View no Sidebar</a></li>
-                      <li><a class="dropdown-item" href="blog-list-sidebar.html">List View with Sidebar</a></li>
-                      <li><a class="dropdown-item" href="blog-list.html">List View no Sidebar</a></li>
-                      <li><a class="dropdown-item" href="blog-single-v1.html">Single post v.1</a></li>
-                      <li><a class="dropdown-item" href="blog-single-v2.html">Single post v.2</a></li>
-                      <li><a class="dropdown-item" href="blog-single-v3.html">Single post v.3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">About</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="about-agency.html">About - Agency</a></li>
-                      <li><a class="dropdown-item" href="about-product.html">About - Product</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="services-v1.html">Services v.1</a></li>
-                      <li><a class="dropdown-item" href="services-v2.html">Services v.2</a></li>
-                      <li><a class="dropdown-item" href="services-v3.html">Services v.3</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Contacts</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="contacts-v1.html">Contacts v.1</a></li>
-                      <li><a class="dropdown-item" href="contacts-v2.html">Contacts v.2</a></li>
-                      <li><a class="dropdown-item" href="contacts-v3.html">Contacts v.3</a></li>
-                    </ul>
-                  </li>
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Specialty Pages</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="coming-soon-v1.html">Coming Soon v.1</a></li>
-                      <li><a class="dropdown-item" href="coming-soon-v2.html">Coming Soon v.2</a></li>
-                      <li><a class="dropdown-item" href="404-v1.html">404 Error v.1</a></li>
-                      <li><a class="dropdown-item" href="404-v2.html">404 Error v.2</a></li>
-                      <li><a class="dropdown-item" href="404-v3.html">404 Error v.3</a></li>
-                    </ul>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">Account</a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown">
-                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Auth pages</a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="account-signin.html">Sign In</a></li>
-                      <li><a class="dropdown-item" href="account-signup.html">Sign Up</a></li>
-                      <li><a class="dropdown-item" href="account-signinup.html">Sign In / Up</a></li>
-                      <li><a class="dropdown-item" href="account-password-recovery.html">Password Recovery</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="dropdown-item" href="account-overview.html">Overview</a></li>
-                  <li><a class="dropdown-item" href="account-settings.html">Settings</a></li>
-                  <li><a class="dropdown-item" href="account-billing.html">Billing</a></li>
-                  <li><a class="dropdown-item" href="account-orders.html">Orders</a></li>
-                  <li><a class="dropdown-item" href="account-earnings.html">Earnings</a></li>
-                  <li><a class="dropdown-item" href="account-chat.html">Chat (Messages)</a></li>
-                  <li><a class="dropdown-item" href="account-favorites.html">Favorites (Wishlist)</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="components/typography.html">UI Kit</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="docs/getting-started.html">Docs</a>
-              </li>
-            </ul> -->
             <div class="d-sm-none p-3 mt-n3">
               <a class="btn btn-primary w-100 mb-1" href="#contact" target="_blank" rel="noopener">
                 <i class="ai-phone fs-xl me-2 ms-n1"></i>
@@ -417,12 +212,6 @@
                 <div class="parallax-layer" data-depth="0.1">
                   <img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer">
                 </div>
-<!--                 <div class="parallax-layer" data-depth="-0.2">
-                  <img src="assets/img/landing/business-consulting/hero/02.png" alt="Layer">
-                </div>
-                <div class="parallax-layer" data-depth="0.25">
-                  <img src="assets/img/landing/business-consulting/hero/03.png" alt="Layer">
-                </div> -->
               </div>
             </div>
             <div class="col-lg-5 order-lg-1">
@@ -441,122 +230,87 @@
         </div>
       </section>
 
-<section class="overflow-hidden py-5 my-md-2 my-xl-4 my-xxl-5">
-  <div class="container py-2 py-sm-4 py-lg-5">
-    <h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Our Product</h2>
+      <section class="overflow-hidden py-5 my-md-2 my-xl-4 my-xxl-5">
+	<div class="container py-2 py-sm-4 py-lg-5">
+	  <h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Our Product</h2>
 
-    <!-- Step1 -->
-    <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-      <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <img class="d-dark-mode-none" src="/static/assets/img/custom/docs_white.svg" width="325" alt="Image">
-        <img class="d-none d-dark-mode-block" src="/static/assets/img/custom/docs_black.svg" width="325" alt="Image">
-      </div>
-      <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <div class="pe-md-4 pe-lg-0">
-          <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
-          <h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
-          <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it!</p>
-          <a class="btn btn-outline-primary rounded-pill" href="{% url 'upload' %}">upload</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- Arrow -->
-    <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-      <svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
-        <path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-        <path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
-        <defs>
-          <linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="currentColor"></stop>
-            <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-
-    <!-- Step -->
-    <div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-      <div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <img class="d-dark-mode-none" src="/static/assets/img/custom/brags_white.svg" width="325" alt="Image">
-        <img class="d-none d-dark-mode-block" src="/static/assets/img/custom/brags_black.svg" width="325" alt="Image">
-      </div>
-      <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <div class="ps-md-4 ps-lg-0">
-          <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
-          <h3 class="h2 mb-3 mb-lg-4">bRAGs Processes Documents in Seconds, Sit Tight.</h3>
-          <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, Crunch, Crunch!</p>
-          <a class="btn btn-outline-primary rounded-pill" href="{% url 'documents' %}">upload</a>          
-        </div>
-      </div>
-    </div>
-
-    <!-- Arrow -->
-    <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-      <svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
-        <path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
-        <path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-        <defs>
-          <linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="currentColor"></stop>
-            <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-
-    <!-- Step -->
-    <div class="row align-items-top position-relative">
-      <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <img class="d-dark-mode-none" src="/static/assets/img/custom/query_white.svg" width="325" alt="Image">
-        <img class="d-none d-dark-mode-block" src="/static/assets/img/custom/query_black.svg" width="325" alt="Image">
-      </div>
-      <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-        <div class="pe-md-4 pe-lg-0">
-          <span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
-          <h3 class="h2 mb-3 mb-lg-4">Query</h3>
-          <p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select that document you want to query and Query away!</p>
-          <a class="btn btn-outline-primary rounded-pill" href="{% url 'documents' %}">Get connected</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-      <!-- Stats -->
-<!--       <section class="container pb-2 pb-sm-3 pb-md-4 pb-lg-5 mb-xl-3 mb-xxl-5">
-        <div class="bg-light rounded-5 py-4 py-md-5 px-lg-5">
-          <div class="row row-cols-2 row-cols-md-4 g-0">
-            <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
-              <div class="position-absolute top-50 end-0 translate-middle-y border-end" style="height: 60px;"></div>
-              <div class="p-3 px-sm-0 py-sm-4">
-                <div class="h2 display-5 text-primary mb-0">540+</div>
-                <span>Happy clients</span>
+	  <!-- Step1 -->
+	  <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <img class="d-dark-mode-none" src="assets/img/custom/docs_white.svg" width="325" alt="Image">
+              <img class="d-none d-dark-mode-block" src="assets/img/custom/docs_black.svg" width="325" alt="Image">
+	    </div>
+	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="pe-md-4 pe-lg-0">
+		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
+		<h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
+		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it!</p>
+		<a class="btn btn-outline-primary rounded-pill" href="{% url 'upload' %}">upload</a>
               </div>
-            </div>
-            <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
-              <div class="position-absolute top-50 end-0 translate-middle-y border-end d-none d-md-block" style="height: 60px;"></div>
-              <div class="p-3 px-sm-0 py-sm-4">
-                <div class="h2 display-5 text-primary mb-0">1070</div>
-                <span>Projects completed</span>
-              </div>
-            </div>
-            <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
-              <div class="position-absolute top-50 end-0 translate-middle-y border-end" style="height: 60px;"></div>
-              <div class="p-3 px-sm-0 py-sm-4">
-                <div class="h2 display-5 text-primary mb-0">30+</div>
-                <span>Full time specialists</span>
-              </div>
-            </div>
-            <div class="col d-md-flex justify-content-center text-center text-md-start position-relative">
-              <div class="p-3 px-sm-0 py-sm-4">
-                <div class="h2 display-5 text-primary mb-0">15</div>
-                <span>Awards won</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
+	    </div>
+	  </div>
 
+	  <!-- Arrow -->
+	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+	    <svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
+              <path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+              <path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
+              <defs>
+		<linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
+		  <stop offset="0" stop-color="currentColor"></stop>
+		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+		</linearGradient>
+              </defs>
+	    </svg>
+	  </div>
+
+	  <!-- Step -->
+	  <div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+	    <div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <img class="d-dark-mode-none" src="assets/img/custom/brags_white.svg" width="325" alt="Image">
+              <img class="d-none d-dark-mode-block" src="assets/img/custom/brags_black.svg" width="325" alt="Image">
+	    </div>
+	    <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="ps-md-4 ps-lg-0">
+		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
+		<h3 class="h2 mb-3 mb-lg-4">bRAGs Processes Documents in Seconds, Sit Tight.</h3>
+		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, Crunch, Crunch!</p>
+		<a class="btn btn-outline-primary rounded-pill" href="{% url 'documents' %}">upload</a>          
+              </div>
+	    </div>
+	  </div>
+
+	  <!-- Arrow -->
+	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+	    <svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
+              <path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
+              <path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+              <defs>
+		<linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
+		  <stop offset="0" stop-color="currentColor"></stop>
+		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+		</linearGradient>
+              </defs>
+	    </svg>
+	  </div>
+
+	  <!-- Step -->
+	  <div class="row align-items-top position-relative">
+	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <img class="d-dark-mode-none" src="assets/img/custom/query_white.svg" width="325" alt="Image">
+              <img class="d-none d-dark-mode-block" src="assets/img/custom/query_black.svg" width="325" alt="Image">
+	    </div>
+	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+              <div class="pe-md-4 pe-lg-0">
+		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
+		<h3 class="h2 mb-3 mb-lg-4">Query</h3>
+		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select that document you want to query and Query away!</p>
+		<a class="btn btn-outline-primary rounded-pill" href="{% url 'documents' %}">Get connected</a>
+              </div>
+	    </div>
+	  </div>
+	</div>
+      </section>
 
       <!-- Services grid -->
       <section class="container py-5">
@@ -580,8 +334,8 @@
                 <p class="card-text">Still stuck in the old ways of building and testing your code and looking to revamp it? We can architect the next generation CI/CD pipelines by employing right AI agents.</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
@@ -591,7 +345,7 @@
           <div class="col">
             <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
               <div class="card-body pb-0">
-                 <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                   <g class="text-info">
                     <path d="M25,25h15v15H25V25z" fill="currentColor"></path>
                   </g>
@@ -603,8 +357,8 @@
                 <p class="card-text">Dont let the most important part of your Software Development Life Cycle(SDLC) be manual. If there are logs to be sifted through and made sense of -- then you can lean on our AI agents to boost your productivity.</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
@@ -614,7 +368,7 @@
           <div class="col">
             <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
               <div class="card-body pb-0">
-                 <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                   <g class="text-info">
                     <path d="M34.9811 16.2655C34.3635 26.3194 26.3194 34.3634 16.2656 34.981V40H40V16.2655H34.9811Z" fill="currentColor"></path>
                   </g>
@@ -629,8 +383,8 @@
                 <p class="card-text">If you have a matrix of embedded systems or devices running a suite of tests, then you have a lot of logs. Let log analysis be automated via RAG based automated systems. We can help you!</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
@@ -640,7 +394,7 @@
           <div class="col">
             <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
               <div class="card-body pb-0">
-                 <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                   <g class="text-primary">
                     <path d="M19.9999 0C11.1313 0 3.61211 5.77313 0.992188 13.7659H39.0077C36.3877 5.77313 28.8686 0 19.9999 0Z" fill="currentColor"></path>
                   </g>
@@ -655,8 +409,8 @@
                 <p class="card-text">Do you have a lot of documents, test reports etc. that could use of the power of Large Language Models(LLMs)? Afraid of compromising the confidentiality of the materials? We can help build a custom RAG based framework without the need for a suite of AI/ML engineers.</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
@@ -666,7 +420,7 @@
           <div class="col">
             <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
               <div class="card-body pb-0">
-                 <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                <svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
                   <g class="text-primary">
                     <path d="M25.2791 12.7502C28.1954 9.83389 28.1954 5.10556 25.2791 2.18921C22.3627 -0.727136 17.6344 -0.727137 14.718 2.18921C11.8017 5.10556 11.8017 9.83389 14.718 12.7502C17.6344 15.6666 22.3627 15.6666 25.2791 12.7502Z" fill="currentColor"></path>
                   </g>
@@ -681,8 +435,8 @@
                 <p class="card-text">Let our RAG solutions augment the efficiency of your paralegals by providing you easy to use tools.</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div> 
             </a>
@@ -704,8 +458,8 @@
                 <p class="card-text">AI can revolutinize how you ingest the information in the documents during your quarterly and yearly schedules.</p>
               </div>
               <div class="card-footer border-0 py-3 my-3 mb-sm-4">
-<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
-                  <i class="ai-arrow-right"></i>
+		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
+				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
@@ -716,7 +470,7 @@
 
 
 
- <!-- Contact details -->
+      <!-- Contact details -->
       <section class="bg-secondary py-5" id="contact">
         <div class="container py-lg-3 py-xl-4 py-xxl-5">
           <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 py-sm-2 py-md-3 py-lg-4">
@@ -740,16 +494,16 @@
     </main>
 
 
-        <!-- Footer -->
+    <!-- Footer -->
     <footer class="footer bg-dark pb-3 pt-sm-3 py-md-4 py-lg-5" data-bs-theme="dark">
       <div class="container pb-4 pt-5">
         <div class="d-md-flex align-items-center justify-content-between pb-1 pb-md-0 mb-4 mb-md-5">
           <nav class="nav justify-content-center justify-content-md-start pb-sm-2 pb-md-0 mb-4 mb-md-0 ms-md-n3">
             <a class="nav-link py-1 px-0 mx-3" href="#">Services</a>
-<!--             <a class="nav-link py-1 px-0 mx-3" href="#">Reviews</a>
-            <a class="nav-link py-1 px-0 mx-3" href="#">Team</a>
-            <a class="nav-link py-1 px-0 mx-3" href="#">Blog</a> -->
-            <a class="nav-link py-1 px-0 mx-3" href="#contact">Contact</a>
+	    <!--             <a class="nav-link py-1 px-0 mx-3" href="#">Reviews</a>
+			     <a class="nav-link py-1 px-0 mx-3" href="#">Team</a>
+			     <a class="nav-link py-1 px-0 mx-3" href="#">Blog</a> -->
+			     <a class="nav-link py-1 px-0 mx-3" href="#contact">Contact</a>
           </nav>
           <div class="d-flex justify-content-center justify-content-md-start me-md-n2">
             <a class="btn btn-icon btn-sm btn-secondary btn-linkedin rounded-circle mx-2" href="https://www.linkedin.com/in/praveen-samudrala/" aria-label="LinkedIn">
