@@ -23,15 +23,15 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
-     inkscape:zoom="0.63400942"
-     inkscape:cx="443.99971"
-     inkscape:cy="543.36732"
+     inkscape:zoom="2.5827598"
+     inkscape:cx="613.49104"
+     inkscape:cy="750.16655"
      inkscape:window-width="1200"
      inkscape:window-height="974"
      inkscape:window-x="457"
      inkscape:window-y="25"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g28" />
+     inkscape:current-layer="layer1" />
   <defs
      id="defs1">
     <inkscape:perspective
@@ -46,60 +46,56 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g28"
-       transform="matrix(2.5623209,0,0,2.6234063,-90.95566,-256.93866)">
-      <rect
-         style="opacity:0.557734;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="rect25"
-         width="74.671165"
-         height="45.116734"
-         x="38.553932"
-         y="132.61272"
-         ry="1.4513165" />
-      <rect
-         style="opacity:0.557734;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="rect26"
-         width="0.68296796"
-         height="2.2310472"
-         x="41.513458"
-         y="173.76315"
-         rx="0.13420467"
-         ry="0.14613518" />
-      <rect
-         style="opacity:0.557734;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="rect26-6"
-         width="0.68296796"
-         height="2.2310472"
-         x="43.843517"
-         y="173.73947"
-         rx="0.13420467"
-         ry="0.14613518" />
-      <rect
-         style="opacity:0.557734;fill:#1a1a1a;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="rect27"
-         width="9.7892084"
-         height="0.99157655"
-         x="47.43251"
-         y="174.25891"
-         rx="0.13420467"
-         ry="0.14613518" />
-      <ellipse
-         style="opacity:0.557734;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="path27"
-         cx="105.82628"
-         cy="173.8871"
-         rx="0.56913996"
-         ry="0.6197353" />
-      <rect
-         style="opacity:0.557734;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.139081;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
-         id="rect28"
-         width="63.743679"
-         height="0.74368238"
-         x="44.017677"
-         y="177.72946"
-         rx="0.13420467"
-         ry="0.14613518" />
-    </g>
+    <rect
+       style="opacity:0.460677;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.319575;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect25"
+       width="191.3725"
+       height="92.94416"
+       x="7.8113775"
+       y="116.39424"
+       ry="2.9898307" />
+    <rect
+       style="opacity:0.460677;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.360593;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26"
+       width="1.7499831"
+       height="5.8529429"
+       x="16.249777"
+       y="191.81828"
+       rx="0.34387544"
+       ry="0.38337195" />
+    <rect
+       style="opacity:0.460677;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.360593;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect26-6"
+       width="1.7499831"
+       height="5.8529429"
+       x="22.220135"
+       y="191.75616"
+       rx="0.34387544"
+       ry="0.38337195" />
+    <rect
+       style="opacity:0.460677;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.360593;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect27"
+       width="25.083094"
+       height="2.6013081"
+       x="31.416288"
+       y="193.11887"
+       rx="0.34387544"
+       ry="0.38337195" />
+    <ellipse
+       style="opacity:0.460677;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.34496;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="path27"
+       cx="181.03987"
+       cy="192.2971"
+       rx="1.4661356"
+       ry="1.4799709" />
+    <rect
+       style="opacity:0.460677;fill:#f9f9f9;fill-opacity:1;stroke:#000000;stroke-width:0.360593;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       id="rect28"
+       width="163.33176"
+       height="1.950981"
+       x="21.831755"
+       y="209.31793"
+       rx="0.34387544"
+       ry="0.38337195" />
   </g>
 </svg>
