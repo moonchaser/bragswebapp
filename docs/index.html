@@ -1,629 +1,647 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
-  <head>
+<head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HQLTES7ENY"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-  gtag('config', 'G-HQLTES7ENY');
+	gtag('config', 'G-HQLTES7ENY');
 </script>
 
-	  
-    <meta charset="utf-8">
 
-    <!-- Viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta charset="utf-8">
 
-    <!-- SEO meta tags -->
-    <title>bRAGs | AI Powered Tools</title>
-    <meta name="description" content="bRAGs | AI Powered Tools">
-    <meta name="keywords" content="Life Sciences, Biotech, clinical trials, CI, CD, RAG, LLM, local LLM, QA automation, AI agents, Jenkins, Github actions, document parsing, QA, Lawfirm, lawyers">
-    <meta name="author" content="Praveen Samudrala">
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
 
-    <!-- Webmanifest + Favicon / App icons -->
-    <link rel="manifest" href="/manifest.json">
+<!-- SEO meta tags -->
+<title>bRAGs | AI Powered Tools</title>
+<meta name="description" content="bRAGs | AI Powered Tools">
+<meta name="keywords" content="Life Sciences, Biotech, clinical trials, CI, CD, RAG, LLM, local LLM, QA automation, AI agents, Jenkins, Github actions, document parsing, QA, Lawfirm, lawyers">
+<meta name="author" content="Praveen Samudrala">
 
-    <!-- Theme switcher (color modes) -->
-    <script src="assets/js/theme-switcher.js"></script>
+<!-- Webmanifest + Favicon / App icons -->
+<link rel="manifest" href="/manifest.json">
 
-    <!-- Import Google font (Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+<!-- Theme switcher (color modes) -->
+<script src="assets/js/theme-switcher.js"></script>
 
-    <!-- Vendor styles -->
-    <link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+<!-- Import Google font (Inter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
 
-    <!-- Font icons -->
-    <link rel="stylesheet" href="assets/icons/around-icons.min.css">
+<!-- Vendor styles -->
+<link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
 
-    <!-- Theme styles + Bootstrap -->
-    <link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+<!-- Font icons -->
+<link rel="stylesheet" href="assets/icons/around-icons.min.css">
 
-    <!-- Page loading styles -->
-    <style>
-      .page-loading {
-	  position: fixed;
-	  top: 0;
-	  right: 0;
-	  bottom: 0;
-	  left: 0;
-	  width: 100%;
-	  height: 100%;
-	  -webkit-transition: all .4s .2s ease-in-out;
-	  transition: all .4s .2s ease-in-out;
-	  background-color: #fff;
-	  opacity: 0;
-	  visibility: hidden;
-	  z-index: 9999;
-      }
-      [data-bs-theme="dark"] .page-loading {
-	  background-color: #121519;
-      }
-      .page-loading.active {
-	  opacity: 1;
-	  visibility: visible;
-      }
-      .page-loading-inner {
-	  position: absolute;
-	  top: 50%;
-	  left: 0;
-	  width: 100%;
-	  text-align: center;
-	  -webkit-transform: translateY(-50%);
-	  transform: translateY(-50%);
-	  -webkit-transition: opacity .2s ease-in-out;
-	  transition: opacity .2s ease-in-out;
-	  opacity: 0;
-      }
-      .page-loading.active > .page-loading-inner {
-	  opacity: 1;
-      }
-      .page-loading-inner > span {
-	  display: block;
-	  font-family: "Inter", sans-serif;
-	  font-size: 1rem;
-	  font-weight: normal;
-	  color: #6f788b;
-      }
-      [data-bs-theme="dark"] .page-loading-inner > span {
-	  color: #fff;
-	  opacity: .6;
-      }
-      .page-spinner {
-	  display: inline-block;
-	  width: 2.75rem;
-	  height: 2.75rem;
-	  margin-bottom: .75rem;
-	  vertical-align: text-bottom;
-	  background-color: #d7dde2; 
-	  border-radius: 50%;
-	  opacity: 0;
-	  -webkit-animation: spinner .75s linear infinite;
-	  animation: spinner .75s linear infinite;
-      }
-      [data-bs-theme="dark"] .page-spinner {
-	  background-color: rgba(255,255,255,.25);
-      }
-      @-webkit-keyframes spinner {
-	  0% {
-	      -webkit-transform: scale(0);
-	      transform: scale(0);
-	  }
-	  50% {
-	      opacity: 1;
-	      -webkit-transform: none;
-	      transform: none;
-	  }
-      }
-      @keyframes spinner {
-	  0% {
-	      -webkit-transform: scale(0);
-	      transform: scale(0);
-	  }
-	  50% {
-	      opacity: 1;
-	      -webkit-transform: none;
-	      transform: none;
-	  }
-      }
-    </style>
+<!-- Theme styles + Bootstrap -->
+<link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
 
-    <!-- Page loading scripts -->
-    <script>
-      (function () {
-	  window.onload = function () {
-	      const preloader = document.querySelector('.page-loading')
-	      preloader.classList.remove('active')
-	      setTimeout(function () {
-	   	  preloader.remove()
-	      }, 1500)
-	  }
-      })()
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  </head>
+<!-- Page loading styles -->
+<style>
+	.page-loading {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all .4s .2s ease-in-out;
+		transition: all .4s .2s ease-in-out;
+		background-color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9999;
+	}
+	[data-bs-theme="dark"] .page-loading {
+		background-color: #121519;
+	}
+	.page-loading.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.page-loading-inner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		opacity: 0;
+	}
+	.page-loading.active > .page-loading-inner {
+		opacity: 1;
+	}
+	.page-loading-inner > span {
+		display: block;
+		font-family: "Inter", sans-serif;
+		font-size: 1rem;
+		font-weight: normal;
+		color: #6f788b;
+	}
+	[data-bs-theme="dark"] .page-loading-inner > span {
+		color: #fff;
+		opacity: .6;
+	}
+	.page-spinner {
+		display: inline-block;
+		width: 2.75rem;
+		height: 2.75rem;
+		margin-bottom: .75rem;
+		vertical-align: text-bottom;
+		background-color: #d7dde2; 
+		border-radius: 50%;
+		opacity: 0;
+		-webkit-animation: spinner .75s linear infinite;
+		animation: spinner .75s linear infinite;
+	}
+	[data-bs-theme="dark"] .page-spinner {
+		background-color: rgba(255,255,255,.25);
+	}
+	@-webkit-keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+	@keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+</style>
 
-
-  <!-- Body -->
-  <body class="bg-secondary">
+<!-- Page loading scripts -->
+<script>
+	(function () {
+		window.onload = function () {
+			const preloader = document.querySelector('.page-loading')
+			preloader.classList.remove('active')
+			setTimeout(function () {
+				preloader.remove()
+			}, 1500)
+		}
+	})()
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
 
 
-    <!-- Page loading spinner -->
-    <div class="page-loading active">
-      <div class="page-loading-inner">
-	<div class="page-spinner"></div>
-	<span>Loading...</span>
-      </div>
-    </div>
+<!-- Body -->
+<body class="bg-secondary">
 
 
-    <!-- Page wrapper -->
-    <main class="page-wrapper">
-
-      <!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
-      <header class="navbar navbar-expand-lg fixed-top">
-	<div class="container">
-
-	  <!-- Navbar brand (Logo) -->
-	  <a class="navbar-brand pe-sm-3" href="index.html">
-	    bRAGs
-	  </a>
-
-	  <!-- Theme switcher -->
-	  <div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
-	    <input class="form-check-input" type="checkbox" id="theme-mode">
-	    <label class="form-check-label" for="theme-mode">
-	      <i class="ai-sun fs-lg"></i>
-	    </label>
-	    <label class="form-check-label" for="theme-mode">
-	      <i class="ai-moon fs-lg"></i>
-	    </label>
-	  </div>
-
-	  <a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" rel="noopener">
-	    <i class="ai-phone fs-xl me-2 ms-n1"></i>
-	    Contact Us
-	  </a>
-
-	  <!-- Mobile menu toggler (Hamburger) -->
-	  <button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-
-	  <!-- Navbar collapse (Main navigation) -->
-	  <nav class="collapse navbar-collapse" id="navbarNav">
-	    <ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
-	      <li class="nav-item">
-		<a class="nav-link" href="#product">Product</a>
-	      </li>
-	      <li class="nav-item">
-		<a class="nav-link" href="#benefits">Benefits</a>
-	      </li>							
-	      <li class="nav-item">
-		<a class="nav-link" href="#services">Services</a>
-	      </li>
-	    </ul>
-
-	    <div class="d-sm-none p-3 mt-n3">
-	      <a class="btn btn-primary w-100 mb-1" href="#contact" target="_blank" rel="noopener">
-		<i class="ai-phone fs-xl me-2 ms-n1"></i>
-		Contact Us
-	      </a>
-	    </div>
-	  </nav>
-
-
-	</div>
-      </header>
-
-
-      <section class="overflow-hidden">
-	<div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
-	  <div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
-	    <div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
-	      <div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
-		<div class="parallax-layer" data-depth="0.1">
-		  <img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer">
+	<!-- Page loading spinner -->
+	<div class="page-loading active">
+		<div class="page-loading-inner">
+			<div class="page-spinner"></div>
+			<span>Loading...</span>
 		</div>
-	      </div>
-	    </div>
-	    <div class="col-lg-5 order-lg-1">
-	      <h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3">AI Powered Tools At Your Finger Tips!
-	      </h1>
-	      <p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-5" style="max-width: 420px;">We are a team of experienced professionals building tools, now embedded with AI.</p>
-	      <div class="input-group mx-auto mx-lg-0" style="max-width: 420px;">
-		<span class="input-group-text text-body-secondary">
-		  <i class="ai-mail"></i>
-		</span>
-		<input class="form-control" type="email" placeholder="Enter your email">
-		<a class="btn btn-primary" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
-	      </div>
-	    </div>
-	  </div>
 	</div>
-      </section>
 
-      <!-- product -->
-      <section class="container py-5" id="product">
-	<!-- <div class="container py-2 py-sm-4 py-lg-5"> -->
-	  <h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">What is bRAGs?</h2>
-	  <h5 class="h5 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">bRAGs is like your personal ChatGPT. But unlike chatGPT, you can use it to query your private documents. You do not share your documents with anyone, your confidential data stays confidential.</h5>
-	  <br><br>	
-	  <h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Get Started in 3 Simple Steps</h2>
-	  <!-- Step1 -->
-	  <div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <img class="d-dark-mode-none" src="assets/img/custom/docs_white.svg" width="325" alt="Image">
-	      <img class="d-none d-dark-mode-block" src="assets/img/custom/docs_black.svg" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <div class="pe-md-4 pe-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
-		<h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it.<br><br>Goto Step 03 if you want to query already uploaded documents.</p>
-	      </div>
-	    </div>
-	  </div>
 
-	  <!-- Arrow -->
-	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-	    <svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
-	      <path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-	      <path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
-	      <defs>
-		<linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
-		  <stop offset="0" stop-color="currentColor"></stop>
-		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-		</linearGradient>
-	      </defs>
-	    </svg>
-	  </div>
+	<!-- Page wrapper -->
+	<main class="page-wrapper">
 
-	  <!-- Step -->
-	  <div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
-	    <div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <img class="d-dark-mode-none" src="assets/img/custom/brags_white.svg" width="325" alt="Image">
-	      <img class="d-none d-dark-mode-block" src="assets/img/custom/brags_black.svg" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <div class="ps-md-4 ps-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
-		<h3 class="h2 mb-3 mb-lg-4">bRAGs processes documents in seconds, sit tight.</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, crunch, crunch!
-		  <ul class="list-unstyled mb-0">
-		    <li class="d-flex pt-1 mt-2">
-		      <i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
-		      Processing Done Locally
-		    </li>
-		    <li class="d-flex pt-1 mt-2">
-		      <i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
-		      Documents Are Not Made Public
-		    </li>
-		    <li class="d-flex pt-1 mt-2">
-		      <i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
-		      Confidential Data Stays Confidential
-		    </li>
-		</p>
-		</ul>     
-	      </div>
-	    </div>
-	  </div>
+		<!-- Navbar. Remove 'fixed-top' class to make the navigation bar scrollable with the page -->
+		<header class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
 
-	  <!-- Arrow -->
-	  <div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
-	    <svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
-	      <path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
-	      <path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
-	      <defs>
-		<linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
-		  <stop offset="0" stop-color="currentColor"></stop>
-		  <stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
-		</linearGradient>
-	      </defs>
-	    </svg>
-	  </div>
+				<!-- Navbar brand (Logo) -->
+				<a class="navbar-brand pe-sm-3" href="index.html">
+					bRAGs
+				</a>
 
-	  <!-- Step -->
-	  <div class="row align-items-top position-relative">
-	    <div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <img class="d-dark-mode-none" src="assets/img/custom/prompt_white.png" width="325" alt="Image">
-	      <img class="d-none d-dark-mode-block" src="assets/img/custom/prompt_black.png" width="325" alt="Image">
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
-	      <div class="pe-md-4 pe-lg-0">
-		<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
-		<h3 class="h2 mb-3 mb-lg-4">Query</h3>
-		<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select the document you want to query and Query away!</p>
-	      </div>
-	    </div>
-	  </div>
-	  <!-- </div> -->
-      </section>
+				<!-- Theme switcher -->
+				<div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+					<input class="form-check-input" type="checkbox" id="theme-mode">
+					<label class="form-check-label" for="theme-mode">
+						<i class="ai-sun fs-lg"></i>
+					</label>
+					<label class="form-check-label" for="theme-mode">
+						<i class="ai-moon fs-lg"></i>
+					</label>
+				</div>
 
-      <!-- Benefits -->
-      <section class="container pt-5 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5" id="benefits">
+				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" rel="noopener">
+					<i class="ai-phone fs-xl me-2 ms-n1"></i>
+					Contact Us
+				</a>
+
+				<!-- Mobile menu toggler (Hamburger) -->
+				<button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<!-- Navbar collapse (Main navigation) -->
+				<nav class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+						<li class="nav-item">
+							<a class="nav-link" href="#product">Product</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#benefits">Benefits</a>
+						</li>							
+						<li class="nav-item">
+							<a class="nav-link" href="#services">Services</a>
+						</li>
+					</ul>
+
+					<div class="d-sm-none p-3 mt-n3">
+						<a class="btn btn-primary w-100 mb-1" href="#contact" target="_blank" rel="noopener">
+							<i class="ai-phone fs-xl me-2 ms-n1"></i>
+							Contact Us
+						</a>
+					</div>
+				</nav>
+
+
+			</div>
+		</header>
+
+
+		<section class="overflow-hidden">
+			<div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
+				<div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4 my-xxl-5">
+					<div class="col-lg-7 order-lg-2 d-flex justify-content-center justify-content-lg-end mb-4 mb-md-5 mb-lg-0 pb-3 pb-md-0">
+						<div class="parallax me-lg-n4 me-xl-n5" style="max-width: 667px;">
+							<div class="parallax-layer" data-depth="0.1">
+								<img src="assets/img/landing/business-consulting/hero/01.png" alt="Layer">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 order-lg-1">
+						<h1 class="display-3 text-center text-lg-start pb-sm-2 pb-md-3">AI Powered Tools At Your Finger Tips!
+						</h1>
+						<p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-5" style="max-width: 420px;">We are a team of experienced professionals building tools, now embedded with AI.</p>
+						<div class="input-group mx-auto mx-lg-0" style="max-width: 420px;">
+							<span class="input-group-text text-body-secondary">
+								<i class="ai-mail"></i>
+							</span>
+							<input class="form-control" type="email" placeholder="Enter your email">
+							<a class="btn btn-primary" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- product -->
+		<section class="container py-5" id="product">
+			<!-- <div class="container py-2 py-sm-4 py-lg-5"> -->
+				<h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">What is bRAGs?</h2>
+				<h5 class="h5 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">bRAGs is like your personal ChatGPT like service. But unlike chatGPT, you can use it to query your private documents. <br>
+
+				You do not share your documents with anyone, your confidential data stays confidential.</h5>
+
+				<div class="row justify-content-center"> 
+					<div class="col-sm-8 col-md-6 col-lg-4"> 
+						<div class="position-relative mt-sm-2 mb-4 mb-sm-2">
+							<img class="d-block rounded-5 w-100" src="assets/img/custom/logo.jpg" alt="Video cover"> 
+							<div class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle z-2"> 
+								<a class="btn btn-icon btn-xl btn-primary rounded-circle stretched-link" href="https://youtu.be/BdDI7xeaDrQ" data-bs-toggle="video" aria-label="Play video"><i class="ai-play-filled"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<br><br>	
+				<h2 class="h1 text-center pb-3 mb-3 mb-lg-4 mt-xxl-2">Get Started in 3 Simple Steps</h2>
+				<!-- Step1 -->
+				<div class="row align-items-center position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+					<div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<img class="d-dark-mode-none" src="assets/img/custom/docs_white.svg" width="325" alt="Image">
+						<img class="d-none d-dark-mode-block" src="assets/img/custom/docs_black.svg" width="325" alt="Image">
+					</div>
+					<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<div class="pe-md-4 pe-lg-0">
+							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 01</span>
+							<h3 class="h2 mb-3 mb-lg-4">Upload your documents.</h3>
+							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">If the document you want to query has not been uploaded, do it.<br><br>Goto Step 03 if you want to query already uploaded documents.</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Arrow -->
+				<div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+					<svg class="d-block text-primary" width="339" height="365" viewBox="0 0 339 365" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left: -150px; margin-top: -140px; margin-bottom: -108px;">
+						<path d="M324 291.371C120.111 291.37 240.756 58.7225 1.00032 73.2606" stroke="url(#arrow1)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+						<path d="M337.375 290.62C338.074 290.998 338.074 292.001 337.375 292.379L328.476 297.196C327.81 297.557 327 297.074 327 296.317L327 286.683C327 285.925 327.81 285.443 328.476 285.803L337.375 290.62Z" fill="currentColor"></path>
+						<defs>
+							<linearGradient id="arrow1" x1="324" y1="291.5" x2="-2.99974" y2="72.4997" gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="currentColor"></stop>
+								<stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+
+				<!-- Step -->
+				<div class="row align-items-top position-relative pb-5 pb-lg-0 mb-1 mb-sm-2 mb-md-4 mb-lg-0">
+					<div class="col-md-6 col-xl-5 offset-xl-1 pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<img class="d-dark-mode-none" src="assets/img/custom/brags_white.svg" width="325" alt="Image">
+						<img class="d-none d-dark-mode-block" src="assets/img/custom/brags_black.svg" width="325" alt="Image">
+					</div>
+					<div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<div class="ps-md-4 ps-lg-0">
+							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 02</span>
+							<h3 class="h2 mb-3 mb-lg-4">bRAGs processes documents in seconds, sit tight.</h3>
+							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Crunch, crunch, crunch!
+								<ul class="list-unstyled mb-0">
+									<li class="d-flex pt-1 mt-2">
+										<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+										Processing Done Locally
+									</li>
+									<li class="d-flex pt-1 mt-2">
+										<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+										Documents Are Not Made Public
+									</li>
+									<li class="d-flex pt-1 mt-2">
+										<i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>
+										Confidential Data Stays Confidential
+									</li>
+								</p>
+							</ul>     
+						</div>
+					</div>
+				</div>
+
+				<!-- Arrow -->
+				<div class="d-none d-lg-flex justify-content-center" data-aos="fade-in" data-aos-duration="500" data-aos-offset="250">
+					<svg class="d-block text-primary" width="263" height="275" viewBox="0 0 263 275" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: -60px; margin-left: -120px; margin-bottom: -80px;">
+						<path d="M8.13678 249.647C7.47108 250.081 6.59001 249.602 6.59106 248.808L6.60444 238.689C6.60544 237.931 7.4158 237.45 8.08162 237.811L16.5478 242.408C17.2136 242.77 17.2512 243.712 16.6163 244.125L8.13678 249.647Z" fill="currentColor"></path>
+						<path d="M261.961 37.8891C216.908 65.6243 128.226 135.486 133.916 193.05C141.029 265.005 265.134 173.468 173.666 148.634C89.2542 125.715 30.9125 210.547 13.9796 236.702" stroke="url(#arrow2)" stroke-width="2" stroke-linecap="round" stroke-dasharray="6 6"></path>
+						<defs>
+							<linearGradient id="arrow2" x1="13.9797" y1="234.5" x2="276.704" y2="60.1939" gradientUnits="userSpaceOnUse">
+								<stop offset="0" stop-color="currentColor"></stop>
+								<stop offset="1" stop-color="currentColor" stop-opacity="0"></stop>
+							</linearGradient>
+						</defs>
+					</svg>
+				</div>
+
+				<!-- Step -->
+				<div class="row align-items-top position-relative">
+					<div class="col-md-6 col-xl-5 offset-lg-1 order-md-2 d-md-flex justify-content-end pb-2 pb-md-0 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<img class="d-dark-mode-none" src="assets/img/custom/prompt_white.png" width="325" alt="Image">
+						<img class="d-none d-dark-mode-block" src="assets/img/custom/prompt_black.png" width="325" alt="Image">
+					</div>
+					<div class="col-md-6 col-lg-5 col-xl-4 offset-xl-1 order-md-1" data-aos="fade-right" data-aos-duration="500" data-aos-offset="250" data-disable-parallax-down="md">
+						<div class="pe-md-4 pe-lg-0">
+							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3 mb-lg-4">Step 03</span>
+							<h3 class="h2 mb-3 mb-lg-4">Query</h3>
+							<p class="pb-1 pb-lg-0 mb-4 mb-lg-5">Select the document you want to query and Query away!</p>
+						</div>
+					</div>
+				</div>
+				<!-- </div> -->
+			</section>
+
+
+
+<!-- Benefits -->
+<section class="container pt-5 mt-md-3 mt-lg-2 mt-xl-4 mt-xxl-5" id="benefits">
 	<h2 class="h1 text-center pt-3 pt-sm-4 pt-lg-5 pb-3 mb-3 mb-lg-4 mt-xl-3">bRAGs benefits</h2>
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4">
 
-	  <!-- Item -->
-	  <div class="col">
-	    <div class="card card-flip">
-	      <div class="card-flip-inner">
-		<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-info mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M1.11125 25.5903H5.55542C6.16903 25.5903 6.66667 26.0876 6.66667 26.7012V37.8124C6.66667 38.426 6.16903 38.9237 5.55542 38.9237H1.11125C0.49764 38.9237 0 38.426 0 37.8124V26.7012C0 26.0876 0.49764 25.5903 1.11125 25.5903Z"></path>
-		      <path d="M12.2202 16.7012H16.6648C17.2784 16.7012 17.776 17.1988 17.776 17.8124V37.8124C17.776 38.426 17.2784 38.9237 16.6648 38.9237H12.2202C11.6066 38.9237 11.1094 38.426 11.1094 37.8124V17.8124C11.1094 17.1988 11.6066 16.7012 12.2202 16.7012Z"></path>
-		      <path d="M23.33 21.146H27.7746C28.3882 21.146 28.8854 21.6436 28.8854 22.2572V37.8127C28.8854 38.4263 28.3882 38.9239 27.7746 38.9239H23.33C22.7164 38.9239 22.2188 38.4263 22.2188 37.8127V22.2572C22.2188 21.6436 22.7164 21.146 23.33 21.146Z"></path>
-		      <path d="M34.4472 14.479H38.8914C39.505 14.479 40.0026 14.9766 40.0026 15.5903V37.8123C40.0026 38.4259 39.505 38.9236 38.8914 38.9236H34.4472C33.8336 38.9236 33.3359 38.4259 33.3359 37.8123V15.5903C33.3359 14.9766 33.8336 14.479 34.4472 14.479Z"></path>
-		      <path d="M36.6667 1.146C34.8267 1.14803 33.3354 2.63932 33.3333 4.47933C33.3378 4.84228 33.4021 5.20199 33.5238 5.54378L27.9614 8.85026C27.2314 8.07593 26.1731 7.70076 25.1184 7.84196C24.0633 7.98315 23.1413 8.62362 22.6404 9.56274L17.7344 7.13273C17.7584 6.98991 17.7726 6.84587 17.7779 6.70142C17.7804 5.35213 16.9694 4.13468 15.7235 3.6167C14.4775 3.09912 13.0424 3.38354 12.0882 4.33732C11.1336 5.2911 10.8484 6.72583 11.3656 7.97217L5.00163 12.7215C4.49707 12.4208 3.9209 12.2605 3.33333 12.2572C1.49251 12.2572 0 13.7493 0 15.5906C0 17.4314 1.49251 18.9239 3.33333 18.9239C5.17415 18.9239 6.66667 17.4314 6.66667 15.5906C6.66382 15.1894 6.58813 14.7926 6.44328 14.4187L12.8707 9.62174C14.128 10.3228 15.6962 10.1173 16.7301 9.11556L22.3092 11.8788C22.6811 13.5353 24.2399 14.647 25.9273 14.459C27.6147 14.271 28.8908 12.844 28.8888 11.146C28.8888 11.0614 28.87 10.9816 28.8639 10.8986L34.9137 7.302C35.4382 7.63363 36.0457 7.81063 36.6667 7.81266C38.5075 7.81266 40 6.32015 40 4.47933C40 2.63851 38.5075 1.146 36.6667 1.146Z"></path>
-		    </svg>
-		    <h3>Secure Data</h3>
-		    <p class="card-text">bRAGs stores data locally on your server.</p>
-		  </div>
+		<!-- Item -->
+		<div class="col">
+			<div class="card card-flip">
+				<div class="card-flip-inner">
+					<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-info mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.11125 25.5903H5.55542C6.16903 25.5903 6.66667 26.0876 6.66667 26.7012V37.8124C6.66667 38.426 6.16903 38.9237 5.55542 38.9237H1.11125C0.49764 38.9237 0 38.426 0 37.8124V26.7012C0 26.0876 0.49764 25.5903 1.11125 25.5903Z"></path>
+								<path d="M12.2202 16.7012H16.6648C17.2784 16.7012 17.776 17.1988 17.776 17.8124V37.8124C17.776 38.426 17.2784 38.9237 16.6648 38.9237H12.2202C11.6066 38.9237 11.1094 38.426 11.1094 37.8124V17.8124C11.1094 17.1988 11.6066 16.7012 12.2202 16.7012Z"></path>
+								<path d="M23.33 21.146H27.7746C28.3882 21.146 28.8854 21.6436 28.8854 22.2572V37.8127C28.8854 38.4263 28.3882 38.9239 27.7746 38.9239H23.33C22.7164 38.9239 22.2188 38.4263 22.2188 37.8127V22.2572C22.2188 21.6436 22.7164 21.146 23.33 21.146Z"></path>
+								<path d="M34.4472 14.479H38.8914C39.505 14.479 40.0026 14.9766 40.0026 15.5903V37.8123C40.0026 38.4259 39.505 38.9236 38.8914 38.9236H34.4472C33.8336 38.9236 33.3359 38.4259 33.3359 37.8123V15.5903C33.3359 14.9766 33.8336 14.479 34.4472 14.479Z"></path>
+								<path d="M36.6667 1.146C34.8267 1.14803 33.3354 2.63932 33.3333 4.47933C33.3378 4.84228 33.4021 5.20199 33.5238 5.54378L27.9614 8.85026C27.2314 8.07593 26.1731 7.70076 25.1184 7.84196C24.0633 7.98315 23.1413 8.62362 22.6404 9.56274L17.7344 7.13273C17.7584 6.98991 17.7726 6.84587 17.7779 6.70142C17.7804 5.35213 16.9694 4.13468 15.7235 3.6167C14.4775 3.09912 13.0424 3.38354 12.0882 4.33732C11.1336 5.2911 10.8484 6.72583 11.3656 7.97217L5.00163 12.7215C4.49707 12.4208 3.9209 12.2605 3.33333 12.2572C1.49251 12.2572 0 13.7493 0 15.5906C0 17.4314 1.49251 18.9239 3.33333 18.9239C5.17415 18.9239 6.66667 17.4314 6.66667 15.5906C6.66382 15.1894 6.58813 14.7926 6.44328 14.4187L12.8707 9.62174C14.128 10.3228 15.6962 10.1173 16.7301 9.11556L22.3092 11.8788C22.6811 13.5353 24.2399 14.647 25.9273 14.459C27.6147 14.271 28.8908 12.844 28.8888 11.146C28.8888 11.0614 28.87 10.9816 28.8639 10.8986L34.9137 7.302C35.4382 7.63363 36.0457 7.81063 36.6667 7.81266C38.5075 7.81266 40 6.32015 40 4.47933C40 2.63851 38.5075 1.146 36.6667 1.146Z"></path>
+							</svg>
+							<h3>Secure Data</h3>
+							<p class="card-text">bRAGs stores data locally on your server.</p>
+						</div>
+					</div>
+					<div class="card-flip-back bg-info rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0.888997 20.4722H4.44434C4.93522 20.4722 5.33333 20.87 5.33333 21.3608V30.2498C5.33333 30.7407 4.93522 31.1388 4.44434 31.1388H0.888997C0.398112 31.1388 0 30.7407 0 30.2498V21.3608C0 20.87 0.398112 20.4722 0.888997 20.4722Z"></path>
+								<path d="M9.7793 13.3608H13.335C13.8258 13.3608 14.224 13.759 14.224 14.2498V30.2498C14.224 30.7407 13.8258 31.1388 13.335 31.1388H9.7793C9.28841 31.1388 8.89062 30.7407 8.89062 30.2498V14.2498C8.89062 13.759 9.28841 13.3608 9.7793 13.3608Z"></path>
+								<path d="M18.6702 16.9165H22.2259C22.7168 16.9165 23.1146 17.3146 23.1146 17.8055V30.2498C23.1146 30.7407 22.7168 31.1388 22.2259 31.1388H18.6702C18.1794 31.1388 17.7812 30.7407 17.7812 30.2498V17.8055C17.7812 17.3146 18.1794 16.9165 18.6702 16.9165V16.9165Z"></path>
+								<path d="M27.5531 11.5835H31.1084C31.5993 11.5835 31.9974 11.9816 31.9974 12.4725V30.2502C31.9974 30.7411 31.5993 31.1392 31.1084 31.1392H27.5531C27.0622 31.1392 26.6641 30.7411 26.6641 30.2502V12.4725C26.6641 11.9816 27.0622 11.5835 27.5531 11.5835V11.5835Z"></path>
+								<path d="M29.3333 0.916504C27.8613 0.918132 26.6683 2.11117 26.6667 3.58317C26.6702 3.87353 26.7217 4.1613 26.819 4.43473L22.3691 7.07991C21.7852 6.46045 20.9385 6.16032 20.0947 6.27327C19.2507 6.38623 18.513 6.8986 18.1123 7.6499L14.1875 5.70589C14.2067 5.59163 14.2181 5.4764 14.2223 5.36084C14.2243 4.28141 13.5755 3.30745 12.5788 2.89307C11.582 2.479 10.4339 2.70654 9.67057 3.46956C8.9069 4.23258 8.67871 5.38037 9.09245 6.37744L4.0013 10.1769C3.59766 9.93636 3.13672 9.8081 2.66667 9.8055C1.19401 9.8055 0 10.9992 0 12.4722C0 13.9448 1.19401 15.1388 2.66667 15.1388C4.13932 15.1388 5.33333 13.9448 5.33333 12.4722C5.33105 12.1512 5.27051 11.8338 5.15462 11.5347L10.2965 7.6971C11.3024 8.25797 12.557 8.09359 13.3841 7.29215L17.8473 9.50277C18.1449 10.828 19.3919 11.7173 20.7419 11.5669C22.0918 11.4165 23.1126 10.2749 23.111 8.9165C23.111 8.84879 23.096 8.78499 23.0911 8.71859L27.931 5.84131C28.3506 6.10661 28.8366 6.24821 29.3333 6.24984C30.806 6.24984 32 5.05583 32 3.58317C32 2.11051 30.806 0.916504 29.3333 0.916504V0.916504Z"></path>
+							</svg>
+							<div class="h3 display-4 text-white pb-1 mb-2">100% Secure</div>
+							<p class="card-text text-white opacity-70">Your documents are never shared with anyone. Your bRAGs server houses all the data locally.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="card-flip-back bg-info rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M0.888997 20.4722H4.44434C4.93522 20.4722 5.33333 20.87 5.33333 21.3608V30.2498C5.33333 30.7407 4.93522 31.1388 4.44434 31.1388H0.888997C0.398112 31.1388 0 30.7407 0 30.2498V21.3608C0 20.87 0.398112 20.4722 0.888997 20.4722Z"></path>
-		      <path d="M9.7793 13.3608H13.335C13.8258 13.3608 14.224 13.759 14.224 14.2498V30.2498C14.224 30.7407 13.8258 31.1388 13.335 31.1388H9.7793C9.28841 31.1388 8.89062 30.7407 8.89062 30.2498V14.2498C8.89062 13.759 9.28841 13.3608 9.7793 13.3608Z"></path>
-		      <path d="M18.6702 16.9165H22.2259C22.7168 16.9165 23.1146 17.3146 23.1146 17.8055V30.2498C23.1146 30.7407 22.7168 31.1388 22.2259 31.1388H18.6702C18.1794 31.1388 17.7812 30.7407 17.7812 30.2498V17.8055C17.7812 17.3146 18.1794 16.9165 18.6702 16.9165V16.9165Z"></path>
-		      <path d="M27.5531 11.5835H31.1084C31.5993 11.5835 31.9974 11.9816 31.9974 12.4725V30.2502C31.9974 30.7411 31.5993 31.1392 31.1084 31.1392H27.5531C27.0622 31.1392 26.6641 30.7411 26.6641 30.2502V12.4725C26.6641 11.9816 27.0622 11.5835 27.5531 11.5835V11.5835Z"></path>
-		      <path d="M29.3333 0.916504C27.8613 0.918132 26.6683 2.11117 26.6667 3.58317C26.6702 3.87353 26.7217 4.1613 26.819 4.43473L22.3691 7.07991C21.7852 6.46045 20.9385 6.16032 20.0947 6.27327C19.2507 6.38623 18.513 6.8986 18.1123 7.6499L14.1875 5.70589C14.2067 5.59163 14.2181 5.4764 14.2223 5.36084C14.2243 4.28141 13.5755 3.30745 12.5788 2.89307C11.582 2.479 10.4339 2.70654 9.67057 3.46956C8.9069 4.23258 8.67871 5.38037 9.09245 6.37744L4.0013 10.1769C3.59766 9.93636 3.13672 9.8081 2.66667 9.8055C1.19401 9.8055 0 10.9992 0 12.4722C0 13.9448 1.19401 15.1388 2.66667 15.1388C4.13932 15.1388 5.33333 13.9448 5.33333 12.4722C5.33105 12.1512 5.27051 11.8338 5.15462 11.5347L10.2965 7.6971C11.3024 8.25797 12.557 8.09359 13.3841 7.29215L17.8473 9.50277C18.1449 10.828 19.3919 11.7173 20.7419 11.5669C22.0918 11.4165 23.1126 10.2749 23.111 8.9165C23.111 8.84879 23.096 8.78499 23.0911 8.71859L27.931 5.84131C28.3506 6.10661 28.8366 6.24821 29.3333 6.24984C30.806 6.24984 32 5.05583 32 3.58317C32 2.11051 30.806 0.916504 29.3333 0.916504V0.916504Z"></path>
-		    </svg>
-		    <div class="h3 display-4 text-white pb-1 mb-2">100% Secure</div>
-		    <p class="card-text text-white opacity-70">Your documents are never shared with anyone. Your bRAGs server houses all the data locally.</p>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	  </div>
 
 
-	  <!-- Item -->
-	  <div class="col">
-	    <div class="card card-flip">
-	      <div class="card-flip-inner">
-		<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-danger mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M37.0833 13.3335H2.91669C1.31669 13.3335 0 14.6502 0 16.2502V37.0835C0 38.6835 1.31669 40.0002 2.91669 40.0002H37.0834C38.6834 40.0002 40.0001 38.6835 40.0001 37.0835V16.2502C40 14.6502 38.6833 13.3335 37.0833 13.3335ZM35 21.2502V32.0835C35 33.6835 33.7 35.0002 32.0833 35.0002H22.9167C21.3 35.0002 20 33.6835 20 32.0835V21.2502C20 19.6502 21.3 18.3335 22.9167 18.3335H32.0834C33.7 18.3335 35 19.6502 35 21.2502ZM15.4167 27.5002H6.25C5.56669 27.5002 5 26.9335 5 26.2502C5 25.5669 5.56669 25.0002 6.25 25.0002H15.4167C16.1 25.0002 16.6667 25.5669 16.6667 26.2502C16.6667 26.9335 16.1 27.5002 15.4167 27.5002ZM16.6667 31.2502C16.6667 31.9335 16.1 32.5002 15.4167 32.5002H6.25C5.56669 32.5002 5 31.9335 5 31.2502C5 30.5669 5.56669 30.0002 6.25 30.0002H15.4167C16.1 30.0002 16.6667 30.5669 16.6667 31.2502ZM15.4167 22.5002H6.25C5.56669 22.5002 5 21.9335 5 21.2502C5 20.5669 5.56669 20.0002 6.25 20.0002H15.4167C16.1 20.0002 16.6667 20.5669 16.6667 21.2502C16.6667 21.9335 16.1 22.5002 15.4167 22.5002Z"></path>
-		      <path d="M37.0859 0H16.2526C14.6443 0 13.3359 1.30835 13.3359 2.91669V7.08339C13.3359 8.69173 14.6443 10.0001 16.2526 10.0001H37.0859C38.6943 10 40.0026 8.69165 40.0026 7.08331V2.91669C40.0026 1.30835 38.6943 0 37.0859 0Z"></path>
-		      <path d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z"></path>
-		    </svg>
-		    <h3>Individual Query Portal</h3>
-		    <p class="card-text">bRAGs comes with your own instance of the Query engine.</p>
-		  </div>
+		<!-- Item -->
+		<div class="col">
+			<div class="card card-flip">
+				<div class="card-flip-inner">
+					<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-danger mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M37.0833 13.3335H2.91669C1.31669 13.3335 0 14.6502 0 16.2502V37.0835C0 38.6835 1.31669 40.0002 2.91669 40.0002H37.0834C38.6834 40.0002 40.0001 38.6835 40.0001 37.0835V16.2502C40 14.6502 38.6833 13.3335 37.0833 13.3335ZM35 21.2502V32.0835C35 33.6835 33.7 35.0002 32.0833 35.0002H22.9167C21.3 35.0002 20 33.6835 20 32.0835V21.2502C20 19.6502 21.3 18.3335 22.9167 18.3335H32.0834C33.7 18.3335 35 19.6502 35 21.2502ZM15.4167 27.5002H6.25C5.56669 27.5002 5 26.9335 5 26.2502C5 25.5669 5.56669 25.0002 6.25 25.0002H15.4167C16.1 25.0002 16.6667 25.5669 16.6667 26.2502C16.6667 26.9335 16.1 27.5002 15.4167 27.5002ZM16.6667 31.2502C16.6667 31.9335 16.1 32.5002 15.4167 32.5002H6.25C5.56669 32.5002 5 31.9335 5 31.2502C5 30.5669 5.56669 30.0002 6.25 30.0002H15.4167C16.1 30.0002 16.6667 30.5669 16.6667 31.2502ZM15.4167 22.5002H6.25C5.56669 22.5002 5 21.9335 5 21.2502C5 20.5669 5.56669 20.0002 6.25 20.0002H15.4167C16.1 20.0002 16.6667 20.5669 16.6667 21.2502C16.6667 21.9335 16.1 22.5002 15.4167 22.5002Z"></path>
+								<path d="M37.0859 0H16.2526C14.6443 0 13.3359 1.30835 13.3359 2.91669V7.08339C13.3359 8.69173 14.6443 10.0001 16.2526 10.0001H37.0859C38.6943 10 40.0026 8.69165 40.0026 7.08331V2.91669C40.0026 1.30835 38.6943 0 37.0859 0Z"></path>
+								<path d="M5 10C7.76142 10 10 7.76142 10 5C10 2.23858 7.76142 0 5 0C2.23858 0 0 2.23858 0 5C0 7.76142 2.23858 10 5 10Z"></path>
+							</svg>
+							<h3>Individual Query Portal</h3>
+							<p class="card-text">bRAGs comes with your own instance of the Query engine.</p>
+						</div>
+					</div>
+					<div class="card-flip-back bg-danger rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M29.6664 10.667H2.33334C1.05335 10.667 0 11.7203 0 13.0003V29.6669C0 30.9468 1.05335 32.0002 2.33334 32.0002H29.6665C30.9465 32.0002 31.9998 30.9468 31.9998 29.6669V13.0003C31.9998 11.7203 30.9464 10.667 29.6664 10.667ZM27.9998 17.0003V25.6669C27.9998 26.9469 26.9598 28.0002 25.6665 28.0002H18.3332C17.0399 28.0002 15.9999 26.9469 15.9999 25.6669V17.0003C15.9999 15.7203 17.0399 14.667 18.3332 14.667H25.6665C26.9598 14.667 27.9998 15.7203 27.9998 17.0003ZM12.3333 22.0003H4.99997C4.45332 22.0003 3.99997 21.5469 3.99997 21.0003C3.99997 20.4536 4.45332 20.0003 4.99997 20.0003H12.3333C12.8799 20.0003 13.3333 20.4536 13.3333 21.0003C13.3333 21.5469 12.8799 22.0003 12.3333 22.0003ZM13.3333 25.0002C13.3333 25.5469 12.8799 26.0002 12.3333 26.0002H4.99997C4.45332 26.0002 3.99997 25.5469 3.99997 25.0002C3.99997 24.4536 4.45332 24.0003 4.99997 24.0003H12.3333C12.8799 24.0003 13.3333 24.4536 13.3333 25.0002ZM12.3333 18.0003H4.99997C4.45332 18.0003 3.99997 17.5469 3.99997 17.0003C3.99997 16.4537 4.45332 16.0003 4.99997 16.0003H12.3333C12.8799 16.0003 13.3333 16.4537 13.3333 17.0003C13.3333 17.5469 12.8799 18.0003 12.3333 18.0003Z"></path>
+								<path d="M29.6639 0H12.9974C11.7107 0 10.6641 1.04667 10.6641 2.33334V5.66667C10.6641 6.95334 11.7107 8.00001 12.9974 8.00001H29.6639C30.9506 7.99994 31.9973 6.95327 31.9973 5.66661V2.33334C31.9973 1.04667 30.9506 0 29.6639 0Z"></path>
+								<path d="M3.99997 7.99994C6.2091 7.99994 7.99994 6.2091 7.99994 3.99997C7.99994 1.79085 6.2091 0 3.99997 0C1.79085 0 0 1.79085 0 3.99997C0 6.2091 1.79085 7.99994 3.99997 7.99994Z"></path>
+							</svg>
+							<div class="h3 display-4 text-white pb-1 mb-2">Secure Queries</div>
+							<p class="card-text text-white opacity-70">We provide your own Query engine. Lock it down to your company's IT network and have your peace of mind.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="card-flip-back bg-danger rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M29.6664 10.667H2.33334C1.05335 10.667 0 11.7203 0 13.0003V29.6669C0 30.9468 1.05335 32.0002 2.33334 32.0002H29.6665C30.9465 32.0002 31.9998 30.9468 31.9998 29.6669V13.0003C31.9998 11.7203 30.9464 10.667 29.6664 10.667ZM27.9998 17.0003V25.6669C27.9998 26.9469 26.9598 28.0002 25.6665 28.0002H18.3332C17.0399 28.0002 15.9999 26.9469 15.9999 25.6669V17.0003C15.9999 15.7203 17.0399 14.667 18.3332 14.667H25.6665C26.9598 14.667 27.9998 15.7203 27.9998 17.0003ZM12.3333 22.0003H4.99997C4.45332 22.0003 3.99997 21.5469 3.99997 21.0003C3.99997 20.4536 4.45332 20.0003 4.99997 20.0003H12.3333C12.8799 20.0003 13.3333 20.4536 13.3333 21.0003C13.3333 21.5469 12.8799 22.0003 12.3333 22.0003ZM13.3333 25.0002C13.3333 25.5469 12.8799 26.0002 12.3333 26.0002H4.99997C4.45332 26.0002 3.99997 25.5469 3.99997 25.0002C3.99997 24.4536 4.45332 24.0003 4.99997 24.0003H12.3333C12.8799 24.0003 13.3333 24.4536 13.3333 25.0002ZM12.3333 18.0003H4.99997C4.45332 18.0003 3.99997 17.5469 3.99997 17.0003C3.99997 16.4537 4.45332 16.0003 4.99997 16.0003H12.3333C12.8799 16.0003 13.3333 16.4537 13.3333 17.0003C13.3333 17.5469 12.8799 18.0003 12.3333 18.0003Z"></path>
-		      <path d="M29.6639 0H12.9974C11.7107 0 10.6641 1.04667 10.6641 2.33334V5.66667C10.6641 6.95334 11.7107 8.00001 12.9974 8.00001H29.6639C30.9506 7.99994 31.9973 6.95327 31.9973 5.66661V2.33334C31.9973 1.04667 30.9506 0 29.6639 0Z"></path>
-		      <path d="M3.99997 7.99994C6.2091 7.99994 7.99994 6.2091 7.99994 3.99997C7.99994 1.79085 6.2091 0 3.99997 0C1.79085 0 0 1.79085 0 3.99997C0 6.2091 1.79085 7.99994 3.99997 7.99994Z"></path>
-		    </svg>
-		    <div class="h3 display-4 text-white pb-1 mb-2">Secure Queries</div>
-		    <p class="card-text text-white opacity-70">We provide your own Query engine. Lock it down to your company's IT network and have your peace of mind.</p>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	  </div>
 
-	  <!-- Item -->
-	  <div class="col">
-	    <div class="card card-flip">
-	      <div class="card-flip-inner">
-		<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-primary mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M37.805 15.6567L34.6717 15.2583C34.4133 14.4633 34.095 13.6967 33.7233 12.9683L35.6583 10.4767C36.4417 9.46833 36.35 8.045 35.455 7.17833L32.83 4.55333C31.955 3.65 30.5317 3.56 29.5217 4.34167L27.0333 6.27667C26.305 5.905 25.5383 5.58667 24.7417 5.32833L24.3433 2.2C24.1933 0.945 23.1283 0 21.8667 0H18.1333C16.8717 0 15.8067 0.945 15.6567 2.195L15.2583 5.32833C14.4617 5.58667 13.695 5.90333 12.9667 6.27667L10.4767 4.34167C9.47 3.56 8.04667 3.65 7.17833 4.545L4.55333 7.16833C3.65 8.045 3.55833 9.46833 4.34167 10.4783L6.27667 12.9683C5.90333 13.6967 5.58667 14.4633 5.32833 15.2583L2.2 15.6567C0.945 15.8067 0 16.8717 0 18.1333V21.8667C0 23.1283 0.945 24.1933 2.195 24.3433L5.32833 24.7417C5.58667 25.5367 5.905 26.3033 6.27667 27.0317L4.34167 29.5233C3.55833 30.5317 3.65 31.955 4.545 32.8217L7.17 35.4467C8.04667 36.3483 9.46833 36.4383 10.4783 35.6567L12.9683 33.7217C13.6967 34.095 14.4633 34.4133 15.2583 34.67L15.6567 37.7967C15.8067 39.055 16.8717 40 18.1333 40H21.8667C23.1283 40 24.1933 39.055 24.3433 37.805L24.7417 34.6717C25.5367 34.4133 26.3033 34.095 27.0317 33.7233L29.5233 35.6583C30.5317 36.4417 31.955 36.35 32.8217 35.455L35.4467 32.83C36.35 31.9533 36.4417 30.5317 35.6583 29.5217L33.7233 27.0317C34.0967 26.3033 34.415 25.5367 34.6717 24.7417L37.7983 24.3433C39.0533 24.1933 39.9983 23.1283 39.9983 21.8667V18.1333C40 16.8717 39.055 15.8067 37.805 15.6567ZM20 28.3333C15.405 28.3333 11.6667 24.595 11.6667 20C11.6667 15.405 15.405 11.6667 20 11.6667C24.595 11.6667 28.3333 15.405 28.3333 20C28.3333 24.595 24.595 28.3333 20 28.3333Z"></path>
-		    </svg>
-		    <h3>Support</h3>
-		    <p class="card-text">Responsive Technical Assistance.</p>
-		  </div>
+		<!-- Item -->
+		<div class="col">
+			<div class="card card-flip">
+				<div class="card-flip-inner">
+					<div class="card-flip-front bg-secondary rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-primary mb-4 mx-auto" width="40" height="40" viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M37.805 15.6567L34.6717 15.2583C34.4133 14.4633 34.095 13.6967 33.7233 12.9683L35.6583 10.4767C36.4417 9.46833 36.35 8.045 35.455 7.17833L32.83 4.55333C31.955 3.65 30.5317 3.56 29.5217 4.34167L27.0333 6.27667C26.305 5.905 25.5383 5.58667 24.7417 5.32833L24.3433 2.2C24.1933 0.945 23.1283 0 21.8667 0H18.1333C16.8717 0 15.8067 0.945 15.6567 2.195L15.2583 5.32833C14.4617 5.58667 13.695 5.90333 12.9667 6.27667L10.4767 4.34167C9.47 3.56 8.04667 3.65 7.17833 4.545L4.55333 7.16833C3.65 8.045 3.55833 9.46833 4.34167 10.4783L6.27667 12.9683C5.90333 13.6967 5.58667 14.4633 5.32833 15.2583L2.2 15.6567C0.945 15.8067 0 16.8717 0 18.1333V21.8667C0 23.1283 0.945 24.1933 2.195 24.3433L5.32833 24.7417C5.58667 25.5367 5.905 26.3033 6.27667 27.0317L4.34167 29.5233C3.55833 30.5317 3.65 31.955 4.545 32.8217L7.17 35.4467C8.04667 36.3483 9.46833 36.4383 10.4783 35.6567L12.9683 33.7217C13.6967 34.095 14.4633 34.4133 15.2583 34.67L15.6567 37.7967C15.8067 39.055 16.8717 40 18.1333 40H21.8667C23.1283 40 24.1933 39.055 24.3433 37.805L24.7417 34.6717C25.5367 34.4133 26.3033 34.095 27.0317 33.7233L29.5233 35.6583C30.5317 36.4417 31.955 36.35 32.8217 35.455L35.4467 32.83C36.35 31.9533 36.4417 30.5317 35.6583 29.5217L33.7233 27.0317C34.0967 26.3033 34.415 25.5367 34.6717 24.7417L37.7983 24.3433C39.0533 24.1933 39.9983 23.1283 39.9983 21.8667V18.1333C40 16.8717 39.055 15.8067 37.805 15.6567ZM20 28.3333C15.405 28.3333 11.6667 24.595 11.6667 20C11.6667 15.405 15.405 11.6667 20 11.6667C24.595 11.6667 28.3333 15.405 28.3333 20C28.3333 24.595 24.595 28.3333 20 28.3333Z"></path>
+							</svg>
+							<h3>Support</h3>
+							<p class="card-text">Responsive Technical Assistance.</p>
+						</div>
+					</div>
+					<div class="card-flip-back bg-primary rounded-5 py-2 py-lg-4 px-0">
+						<div class="card-body text-center">
+							<svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+								<path d="M30.244 12.5253L27.7373 12.2067C27.5307 11.5707 27.276 10.9573 26.9787 10.3747L28.5267 8.38133C29.1533 7.57467 29.08 6.436 28.364 5.74267L26.264 3.64267C25.564 2.92 24.4253 2.848 23.6173 3.47333L21.6267 5.02133C21.044 4.724 20.4307 4.46933 19.7933 4.26267L19.4747 1.76C19.3547 0.756 18.5027 0 17.4933 0H14.5067C13.4973 0 12.6453 0.756 12.5253 1.756L12.2067 4.26267C11.5693 4.46933 10.956 4.72267 10.3733 5.02133L8.38133 3.47333C7.576 2.848 6.43733 2.92 5.74267 3.636L3.64267 5.73467C2.92 6.436 2.84667 7.57467 3.47333 8.38267L5.02133 10.3747C4.72267 10.9573 4.46933 11.5707 4.26267 12.2067L1.76 12.5253C0.756 12.6453 0 13.4973 0 14.5067V17.4933C0 18.5027 0.756 19.3547 1.756 19.4747L4.26267 19.7933C4.46933 20.4293 4.724 21.0427 5.02133 21.6253L3.47333 23.6187C2.84667 24.4253 2.92 25.564 3.636 26.2573L5.736 28.3573C6.43733 29.0787 7.57467 29.1507 8.38267 28.5253L10.3747 26.9773C10.9573 27.276 11.5707 27.5307 12.2067 27.736L12.5253 30.2373C12.6453 31.244 13.4973 32 14.5067 32H17.4933C18.5027 32 19.3547 31.244 19.4747 30.244L19.7933 27.7373C20.4293 27.5307 21.0427 27.276 21.6253 26.9787L23.6187 28.5267C24.4253 29.1533 25.564 29.08 26.2573 28.364L28.3573 26.264C29.08 25.5627 29.1533 24.4253 28.5267 23.6173L26.9787 21.6253C27.2773 21.0427 27.532 20.4293 27.7373 19.7933L30.2387 19.4747C31.2427 19.3547 31.9987 18.5027 31.9987 17.4933V14.5067C32 13.4973 31.244 12.6453 30.244 12.5253ZM16 22.6667C12.324 22.6667 9.33333 19.676 9.33333 16C9.33333 12.324 12.324 9.33333 16 9.33333C19.676 9.33333 22.6667 12.324 22.6667 16C22.6667 19.676 19.676 22.6667 16 22.6667Z"></path>
+							</svg>
+							<div class="h3 display-4 text-white pb-1 mb-2">1 day guarantee</div>
+							<p class="card-text text-white opacity-70">We guarantee a response time of 1 business day. We wont leave you hanging.</p>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="card-flip-back bg-primary rounded-5 py-2 py-lg-4 px-0">
-		  <div class="card-body text-center">
-		    <svg class="d-block text-white mt-2 mt-lg-n4 mb-4 mx-auto" width="32" height="32" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-		      <path d="M30.244 12.5253L27.7373 12.2067C27.5307 11.5707 27.276 10.9573 26.9787 10.3747L28.5267 8.38133C29.1533 7.57467 29.08 6.436 28.364 5.74267L26.264 3.64267C25.564 2.92 24.4253 2.848 23.6173 3.47333L21.6267 5.02133C21.044 4.724 20.4307 4.46933 19.7933 4.26267L19.4747 1.76C19.3547 0.756 18.5027 0 17.4933 0H14.5067C13.4973 0 12.6453 0.756 12.5253 1.756L12.2067 4.26267C11.5693 4.46933 10.956 4.72267 10.3733 5.02133L8.38133 3.47333C7.576 2.848 6.43733 2.92 5.74267 3.636L3.64267 5.73467C2.92 6.436 2.84667 7.57467 3.47333 8.38267L5.02133 10.3747C4.72267 10.9573 4.46933 11.5707 4.26267 12.2067L1.76 12.5253C0.756 12.6453 0 13.4973 0 14.5067V17.4933C0 18.5027 0.756 19.3547 1.756 19.4747L4.26267 19.7933C4.46933 20.4293 4.724 21.0427 5.02133 21.6253L3.47333 23.6187C2.84667 24.4253 2.92 25.564 3.636 26.2573L5.736 28.3573C6.43733 29.0787 7.57467 29.1507 8.38267 28.5253L10.3747 26.9773C10.9573 27.276 11.5707 27.5307 12.2067 27.736L12.5253 30.2373C12.6453 31.244 13.4973 32 14.5067 32H17.4933C18.5027 32 19.3547 31.244 19.4747 30.244L19.7933 27.7373C20.4293 27.5307 21.0427 27.276 21.6253 26.9787L23.6187 28.5267C24.4253 29.1533 25.564 29.08 26.2573 28.364L28.3573 26.264C29.08 25.5627 29.1533 24.4253 28.5267 23.6173L26.9787 21.6253C27.2773 21.0427 27.532 20.4293 27.7373 19.7933L30.2387 19.4747C31.2427 19.3547 31.9987 18.5027 31.9987 17.4933V14.5067C32 13.4973 31.244 12.6453 30.244 12.5253ZM16 22.6667C12.324 22.6667 9.33333 19.676 9.33333 16C9.33333 12.324 12.324 9.33333 16 9.33333C19.676 9.33333 22.6667 12.324 22.6667 16C22.6667 19.676 19.676 22.6667 16 22.6667Z"></path>
-		    </svg>
-		    <div class="h3 display-4 text-white pb-1 mb-2">1 day guarantee</div>
-		    <p class="card-text text-white opacity-70">We guarantee a response time of 1 business day. We wont leave you hanging.</p>
-		  </div>
-		</div>
-	      </div>
-	    </div>
-	  </div>
 
 	</div>
-      </section>
-      <br><br><br><br><br>
-      <!-- Services grid -->
-      <section class="container py-5" id="services">
+</section>
+<br><br><br><br><br>
+<!-- Services grid -->
+<section class="container py-5" id="services">
 	<h2 class="h1 text-center">Our Services</h2>
 	<p class="text-center pb-4 mb-2 mb-lg-3">We can build Retrieval-Augmented Generation(RAG) frameworks on top of bRAGs for a wide range of industries</p>
 	<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
 
-	  <!-- Item -->
-	  <div class="col">
-    	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-    	      <div class="card-body pb-0">
-    		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    		  <g class="text-primary">
-    		    <path d="M19.9999 0C11.1313 0 3.61211 5.77313 0.992188 13.7659H39.0077C36.3877 5.77313 28.8686 0 19.9999 0Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-info">
-    		    <path d="M7.29328 16.1094H0.379453C0.131328 17.368 0 18.6684 0 19.9998C0 26.9291 3.52437 33.0348 8.87797 36.6237L18.3427 27.1589L7.29328 16.1094Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-primary">
-    		    <path d="M10.9688 37.848C13.6819 39.2238 16.7505 39.9998 20.0007 39.9998C31.0464 39.9998 40.0007 31.0455 40.0007 19.9998C40.0007 18.6684 39.8694 17.3679 39.6213 16.1094H32.7074L10.9688 37.848Z" fill="currentColor"></path>
-    		  </g>
-    		</svg>
-    		<h3 class="h4 card-title mt-0">Life Sciences</h3>
-    		<p class="card-text">Do you regularly fetch studies from clinicaltrials.gov? Do you have a lot of documents, test reports etc. that could use of the power of Large Language Models(LLMs)? Afraid of compromising the confidentiality of the materials? bRAGs can help you get up and running without the need for inhouse AI engineers.</p>
-    	      </div>
-    	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+		<!-- Item -->
+		<div class="col">
+			<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+				<div class="card-body pb-0">
+					<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+						<g class="text-primary">
+							<path d="M19.9999 0C11.1313 0 3.61211 5.77313 0.992188 13.7659H39.0077C36.3877 5.77313 28.8686 0 19.9999 0Z" fill="currentColor"></path>
+						</g>
+						<g class="text-info">
+							<path d="M7.29328 16.1094H0.379453C0.131328 17.368 0 18.6684 0 19.9998C0 26.9291 3.52437 33.0348 8.87797 36.6237L18.3427 27.1589L7.29328 16.1094Z" fill="currentColor"></path>
+						</g>
+						<g class="text-primary">
+							<path d="M10.9688 37.848C13.6819 39.2238 16.7505 39.9998 20.0007 39.9998C31.0464 39.9998 40.0007 31.0455 40.0007 19.9998C40.0007 18.6684 39.8694 17.3679 39.6213 16.1094H32.7074L10.9688 37.848Z" fill="currentColor"></path>
+						</g>
+					</svg>
+					<h3 class="h4 card-title mt-0">Life Sciences</h3>
+					<p class="card-text">Do you regularly fetch studies from clinicaltrials.gov? Do you have a lot of documents, test reports etc. that could use of the power of Large Language Models(LLMs)? Afraid of compromising the confidentiality of the materials? bRAGs can help you get up and running without the need for inhouse AI engineers.</p>
+				</div>
+				<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
-	  </div>
+          </div>
 
-	  <!-- Item -->
-	  <div class="col">
-    	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-    	      <div class="card-body pb-0">
-    		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    		  <g class="text-primary">
-    		    <path d="M25.2791 12.7502C28.1954 9.83389 28.1954 5.10556 25.2791 2.18921C22.3627 -0.727136 17.6344 -0.727137 14.718 2.18921C11.8017 5.10556 11.8017 9.83389 14.718 12.7502C17.6344 15.6666 22.3627 15.6666 25.2791 12.7502Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-info">
-    		    <path d="M14.6859 29.3056C15.6559 27.0123 16.9202 24.8838 18.4577 22.9467C13.8666 17.9802 7.29664 14.8701 0 14.8701V40.0004H12.5259C12.5259 36.2925 13.2527 32.6942 14.6859 29.3056Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-primary">
-    		    <path d="M40.0014 40.0004V14.8701C26.1223 14.8701 14.8711 26.1214 14.8711 40.0004H40.0014Z" fill="currentColor"></path>
-    		  </g>
-    		</svg>
-    		<h3 class="h4 card-title mt-0">Law Firms</h3>
-    		<p class="card-text">bRAGs can augment the efficiency of your paralegals by providing you easy to use tools.</p>
-    	      </div>
-    	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          <!-- Item -->
+          <div class="col">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-primary">
+          					<path d="M25.2791 12.7502C28.1954 9.83389 28.1954 5.10556 25.2791 2.18921C22.3627 -0.727136 17.6344 -0.727137 14.718 2.18921C11.8017 5.10556 11.8017 9.83389 14.718 12.7502C17.6344 15.6666 22.3627 15.6666 25.2791 12.7502Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-info">
+          					<path d="M14.6859 29.3056C15.6559 27.0123 16.9202 24.8838 18.4577 22.9467C13.8666 17.9802 7.29664 14.8701 0 14.8701V40.0004H12.5259C12.5259 36.2925 13.2527 32.6942 14.6859 29.3056Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M40.0014 40.0004V14.8701C26.1223 14.8701 14.8711 26.1214 14.8711 40.0004H40.0014Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Law Firms</h3>
+          			<p class="card-text">bRAGs can augment the efficiency of your paralegals by providing you easy to use tools.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div> 
             </a>
-	  </div>
+          </div>
 
-	  <!-- Item -->
-	  <div class="col">
-	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-	      <div class="card-body pb-0">
-		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-		  <g class="text-info">
-		    <path d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z" fill="currentColor"></path>
-		  </g>
-		  <g class="text-primary">
-		    <path d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z" fill="currentColor"></path>
-		  </g>
-		</svg>
-		<h3 class="h4 card-title mt-0">AI powered Continuous Integration (CI)/ Continuous Delivery (CD) Pipelines</h3>
-		<p class="card-text">Still stuck in the old ways of building and testing your code and looking to revamp it? We can architect the next generation CI/CD pipelines using our bRAGs product.</p>
-	      </div>
-	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          <!-- Item -->
+          <div class="col">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M26.307 23.1116C26.307 28.3136 22.09 32.5307 16.888 32.5307C11.6859 32.5307 7.46891 28.3136 7.46891 23.1116C7.46891 17.9096 11.6859 13.6925 16.888 13.6925C17.1467 13.6925 17.4028 13.7038 17.6562 13.7243V6.24121C17.4016 6.22973 17.1455 6.22363 16.888 6.22363C7.56102 6.22363 0 13.7846 0 23.1116C0 32.4386 7.56102 39.9996 16.888 39.9996C26.2149 39.9996 33.7759 32.4386 33.7759 23.1116C33.7759 22.8541 33.7698 22.598 33.7584 22.3433H26.2753C26.2958 22.5968 26.307 22.8529 26.307 23.1116Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M40 20C40 8.9543 31.0457 0 20 0V20H40Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">AI powered Continuous Integration (CI)/ Continuous Delivery (CD) Pipelines</h3>
+          			<p class="card-text">Still stuck in the old ways of building and testing your code and looking to revamp it? We can architect the next generation CI/CD pipelines using our bRAGs product.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
-	  </div>
+          </div>
 
-	  <!-- Item -->
-	  <div class="col">
-    	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-    	      <div class="card-body pb-0">
-    		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    		  <g class="text-info">
-    		    <path d="M25,25h15v15H25V25z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-primary">
-    		    <path d="M10,20c0-5.5,4.5-10,10-10s10,4.5,10,10h10C40,9,31,0,20,0S0,9,0,20s9,20,20,20V30C14.5,30,10,25.5,10,20z" fill="currentColor"></path>
-    		  </g>
-    		</svg>
-    		<h3 class="h4 card-title mt-0">Software QA Automation</h3>
-    		<p class="card-text">Dont let the most important part of your Software Development Life Cycle(SDLC) be manual. If there are logs to be sifted through and made sense of -- then you can lean on bRAGs to boost your productivity.</p>
-    	      </div>
-    	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          <!-- Item -->
+          <div class="col">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M25,25h15v15H25V25z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M10,20c0-5.5,4.5-10,10-10s10,4.5,10,10h10C40,9,31,0,20,0S0,9,0,20s9,20,20,20V30C14.5,30,10,25.5,10,20z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Software QA Automation</h3>
+          			<p class="card-text">Dont let the most important part of your Software Development Life Cycle(SDLC) be manual. If there are logs to be sifted through and made sense of -- then you can lean on bRAGs to boost your productivity.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
-	  </div>
+          </div>
 
-	  <!-- Item -->
-	  <div class="col">
-    	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-    	      <div class="card-body pb-0">
-    		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    		  <g class="text-info">
-    		    <path d="M34.9811 16.2655C34.3635 26.3194 26.3194 34.3634 16.2656 34.981V40H40V16.2655H34.9811Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-info">
-    		    <path d="M15.0195 30.0413C23.3152 30.0413 30.0403 23.3163 30.0403 15.0205H15.0195V30.0413Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-primary">
-    		    <path d="M29.1953 10.0415C27.141 4.19328 21.571 0 15.0208 0C6.725 0 0 6.725 0 15.0208C0 21.571 4.19328 27.141 10.0415 29.1953V10.0415H29.1953Z" fill="currentColor"></path>
-    		  </g>
-    		</svg>
-    		<h3 class="h4 card-title mt-0">Embedded Systems</h3>
-    		<p class="card-text">If you have a matrix of embedded systems or devices running a suite of tests, then you have a lot of logs. Let log analysis be automated via bRAGs. We can help you!</p>
-    	      </div>
-    	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          <!-- Item -->
+          <div class="col">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M34.9811 16.2655C34.3635 26.3194 26.3194 34.3634 16.2656 34.981V40H40V16.2655H34.9811Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-info">
+          					<path d="M15.0195 30.0413C23.3152 30.0413 30.0403 23.3163 30.0403 15.0205H15.0195V30.0413Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M29.1953 10.0415C27.141 4.19328 21.571 0 15.0208 0C6.725 0 0 6.725 0 15.0208C0 21.571 4.19328 27.141 10.0415 29.1953V10.0415H29.1953Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Embedded Systems</h3>
+          			<p class="card-text">If you have a matrix of embedded systems or devices running a suite of tests, then you have a lot of logs. Let log analysis be automated via bRAGs. We can help you!</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
-	  </div>
+          </div>
 
-	  <!-- Item -->
-	  <div class="col">
-    	    <a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
-    	      <div class="card-body pb-0">
-    		<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
-    		  <g class="text-info">
-    		    <path d="M20.0004 36.0226L10.982 21.3535C9.42594 23.3156 8.49609 25.7968 8.49609 28.4955C8.49609 34.8492 13.6467 39.9998 20.0004 39.9998C26.3541 39.9998 31.5047 34.8492 31.5047 28.4955C31.5047 25.7969 30.5749 23.3156 29.0188 21.3535L20.0004 36.0226Z" fill="currentColor"></path>
-    		  </g>
-    		  <g class="text-primary">
-    		    <path d="M39.3962 0H0.605469L20.0009 31.5477L39.3962 0ZM25.7601 7.62359L20.0009 16.9914L14.2416 7.62359H25.7601Z" fill="currentColor"></path>
-    		  </g>
-    		</svg>
-    		<h3 class="h4 card-title mt-0">Finance</h3>
-    		<p class="card-text">bRAGs can revolutinize how you ingest the information in the documents during your quarterly and yearly schedules.</p>
-    	      </div>
-    	      <div class="card-footer border-0 py-3 my-3 mb-sm-4">
+          <!-- Item -->
+          <div class="col">
+          	<a class="card card-hover-primary border-0 h-100 text-decoration-none" href="#">
+          		<div class="card-body pb-0">
+          			<svg class="d-block mt-1 mt-sm-0 mb-4" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+          				<g class="text-info">
+          					<path d="M20.0004 36.0226L10.982 21.3535C9.42594 23.3156 8.49609 25.7968 8.49609 28.4955C8.49609 34.8492 13.6467 39.9998 20.0004 39.9998C26.3541 39.9998 31.5047 34.8492 31.5047 28.4955C31.5047 25.7969 30.5749 23.3156 29.0188 21.3535L20.0004 36.0226Z" fill="currentColor"></path>
+          				</g>
+          				<g class="text-primary">
+          					<path d="M39.3962 0H0.605469L20.0009 31.5477L39.3962 0ZM25.7601 7.62359L20.0009 16.9914L14.2416 7.62359H25.7601Z" fill="currentColor"></path>
+          				</g>
+          			</svg>
+          			<h3 class="h4 card-title mt-0">Finance</h3>
+          			<p class="card-text">bRAGs can revolutinize how you ingest the information in the documents during your quarterly and yearly schedules.</p>
+          		</div>
+          		<div class="card-footer border-0 py-3 my-3 mb-sm-4">
 		<!--                 <div class="btn btn-lg btn-icon btn-outline-primary rounded-circle pe-none">
 				     <i class="ai-arrow-right"></i>
                 </div> -->
               </div>
             </a>
-	  </div>
-	</div>
+          </div>
+        </div>
       </section>
 
       <!-- CTA -->
       <section class="bg-primary py-5" data-bs-theme="dark">
-	<div class="container pt-lg-2 pt-xl-4 pt-xxl-5 pb-1 pb-sm-3">
-	  <div class="row pt-sm-3 pt-md-4">
-	    <div class="col-md-6 col-xl-5 offset-xl-1">
-	      <h2 class="display-3">Ready to take your business to the next level?</h2>
-	    </div>
-	    <div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
-	      <p class="text-body fs-xl pb-4 mb-2 mb-lg-3">We are a San Diego, CA based company. But our product has no boundaries. Reach out to schedule a demo.</p>
+      	<div class="container pt-lg-2 pt-xl-4 pt-xxl-5 pb-1 pb-sm-3">
+      		<div class="row pt-sm-3 pt-md-4">
+      			<div class="col-md-6 col-xl-5 offset-xl-1">
+      				<h2 class="display-3">Ready to take your business to the next level?</h2>
+      			</div>
+      			<div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
+      				<p class="text-body fs-xl pb-4 mb-2 mb-lg-3">We are a San Diego, CA based company. But our product has no boundaries. Reach out to schedule a demo.</p>
 
-	      <div class="input-group">
-		<span class="input-group-text text-body-secondary">
-		  <i class="ai-mail"></i>
-		</span>
-		<input class="form-control" type="email" placeholder="Enter your email">
-		<a class="btn btn-warning" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
-	      </div>
-	    </div>
-	  </div>
-	  <div class="d-none d-md-block text-center mt-n5">
-	    <svg class="text-warning ms-lg-5" width="171" height="97" viewBox="0 0 171 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	      <path d="M169.319 54.333C162.404 55.9509 155.712 58.0764 149.09 60.6764L149.07 60.6761C148.967 60.7158 148.863 60.7554 148.76 60.7951C147.3 61.3811 148.325 63.4238 149.672 63.2067C154.548 62.4134 159.994 59.8725 164.87 59.0792C148.278 73.1339 129.684 89.2549 107.779 92.6402C85.6981 96.0539 65.5665 86.7839 56.8768 66.9865C70.9662 55.0671 79.2106 35.6614 79.0299 17.6457C78.9484 10.3157 76.1485 -3.36373 65.7068 1.21851C55.8557 5.53146 52.0466 22.5213 50.5736 31.7739C48.7364 43.2858 49.7593 55.5291 53.8643 66.2014C52.787 67.0812 51.6907 67.8989 50.5755 68.6546C40.6328 75.3851 27.1039 78.8929 16.4487 72.0362C2.91045 63.3259 1.93984 44.9485 1.56902 30.4091C1.54778 29.6265 0.359869 29.6092 0.360624 30.3915C0.322634 44.0809 0.835929 59.065 10.5664 69.6857C18.5722 78.4182 30.4315 79.7753 41.3346 75.9924C46.2437 74.2834 50.7739 71.7557 54.8581 68.6348C59.9738 80.2586 68.9965 89.6956 82.2735 93.7393C113.474 103.223 141.744 83.0494 164.903 63.697L161.901 71.0334C161.267 72.5887 163.76 73.2736 164.393 71.7389C165.986 67.8713 167.569 63.9933 169.152 60.1359C169.288 60.0247 169.695 58.6127 169.821 58.491C170.122 57.1161 169.152 60.1359 169.851 58.4169C170.189 57.6087 170.517 56.79 170.855 55.9818C171.248 54.9994 170.185 54.1192 169.319 54.333ZM54.3624 59.8578C51.4872 49.1623 51.6051 37.5841 54.2025 26.8039C55.5185 21.3369 57.4405 15.8066 60.1572 10.8541C61.2311 8.89354 62.5139 6.77134 64.2307 5.31421C69.4231 0.902277 74.3649 4.80357 75.8002 10.4446C80.5272 28.9489 70.1806 51.6898 55.8431 64.5114C55.2971 63.0109 54.793 61.4698 54.3624 59.8578Z"></path>
-	    </svg>
-	  </div>
-	</div>
+      				<div class="input-group">
+      					<span class="input-group-text text-body-secondary">
+      						<i class="ai-mail"></i>
+      					</span>
+      					<input class="form-control" type="email" placeholder="Enter your email">
+      					<a class="btn btn-warning" type="button" href="mailto:praveen@brags.ai">Connect with us!</a>
+      				</div>
+      			</div>
+      		</div>
+      		<div class="d-none d-md-block text-center mt-n5">
+      			<svg class="text-warning ms-lg-5" width="171" height="97" viewBox="0 0 171 97" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      				<path d="M169.319 54.333C162.404 55.9509 155.712 58.0764 149.09 60.6764L149.07 60.6761C148.967 60.7158 148.863 60.7554 148.76 60.7951C147.3 61.3811 148.325 63.4238 149.672 63.2067C154.548 62.4134 159.994 59.8725 164.87 59.0792C148.278 73.1339 129.684 89.2549 107.779 92.6402C85.6981 96.0539 65.5665 86.7839 56.8768 66.9865C70.9662 55.0671 79.2106 35.6614 79.0299 17.6457C78.9484 10.3157 76.1485 -3.36373 65.7068 1.21851C55.8557 5.53146 52.0466 22.5213 50.5736 31.7739C48.7364 43.2858 49.7593 55.5291 53.8643 66.2014C52.787 67.0812 51.6907 67.8989 50.5755 68.6546C40.6328 75.3851 27.1039 78.8929 16.4487 72.0362C2.91045 63.3259 1.93984 44.9485 1.56902 30.4091C1.54778 29.6265 0.359869 29.6092 0.360624 30.3915C0.322634 44.0809 0.835929 59.065 10.5664 69.6857C18.5722 78.4182 30.4315 79.7753 41.3346 75.9924C46.2437 74.2834 50.7739 71.7557 54.8581 68.6348C59.9738 80.2586 68.9965 89.6956 82.2735 93.7393C113.474 103.223 141.744 83.0494 164.903 63.697L161.901 71.0334C161.267 72.5887 163.76 73.2736 164.393 71.7389C165.986 67.8713 167.569 63.9933 169.152 60.1359C169.288 60.0247 169.695 58.6127 169.821 58.491C170.122 57.1161 169.152 60.1359 169.851 58.4169C170.189 57.6087 170.517 56.79 170.855 55.9818C171.248 54.9994 170.185 54.1192 169.319 54.333ZM54.3624 59.8578C51.4872 49.1623 51.6051 37.5841 54.2025 26.8039C55.5185 21.3369 57.4405 15.8066 60.1572 10.8541C61.2311 8.89354 62.5139 6.77134 64.2307 5.31421C69.4231 0.902277 74.3649 4.80357 75.8002 10.4446C80.5272 28.9489 70.1806 51.6898 55.8431 64.5114C55.2971 63.0109 54.793 61.4698 54.3624 59.8578Z"></path>
+      			</svg>
+      		</div>
+      	</div>
       </section>
 
 
@@ -633,61 +651,61 @@
     <!-- Footer -->
 
     <footer class="footer pt-lg-5 pt-4 pb-5">
-      <div class="container pt-3 mt-md-2 mt-lg-3">
-	<div class="row gy-md-5 gy-4 mb-md-5 mb-4 pb-lg-2">
-	  <div class="col-lg-3">
-	    <a class="navbar-brand d-inline-flex align-items-center mb-lg-4 mb-3" href="index.html">
-	      <span class="text-nav">bRAGs</span>
-	    </a>
-	    <p class="mb-4 pb-lg-1 fs-xs text-body-secondary" style="max-width: 306px;">A team of experienced professionals to help you build AI powered tools.</p>
-	    <div class="d-flex mt-n3 ms-n3">
-	      <a class="btn btn-secondary btn-icon btn-sm btn-linkedin rounded-circle mt-3 ms-3" href="https://www.linkedin.com/in/praveen-samudrala/" aria-label="LinkedIn">
-		<i class="ai-linkedin"></i>
-	      </a>
-	    </div>
-	  </div>
-	  <div class="col-xl-8 offset-xl-1 col-lg-9">
-	    <div class="row row-cols-sm-4 row-cols-1">
-	      <div class="col">
-		<ul class="nav flex-column mb-0">
-		  <li class="nav-item mb-2"><a class="nav-link p-0" href="#product">About</a></li>                  	
-		  <li class="nav-item mb-2"><a class="nav-link p-0" href="#product">Product</a></li>                	
-		  <li class="nav-item mb-2"><a class="nav-link p-0" href="#services">Services</a></li>
-		</ul>
-	      </div>
-	      <div class="col">
-		<ul class="nav flex-column mb-0">
+    	<div class="container pt-3 mt-md-2 mt-lg-3">
+    		<div class="row gy-md-5 gy-4 mb-md-5 mb-4 pb-lg-2">
+    			<div class="col-lg-3">
+    				<a class="navbar-brand d-inline-flex align-items-center mb-lg-4 mb-3" href="index.html">
+    					<span class="text-nav">bRAGs</span>
+    				</a>
+    				<p class="mb-4 pb-lg-1 fs-xs text-body-secondary" style="max-width: 306px;">A team of experienced professionals to help you build AI powered tools.</p>
+    				<div class="d-flex mt-n3 ms-n3">
+    					<a class="btn btn-secondary btn-icon btn-sm btn-linkedin rounded-circle mt-3 ms-3" href="https://www.linkedin.com/in/praveen-samudrala/" aria-label="LinkedIn">
+    						<i class="ai-linkedin"></i>
+    					</a>
+    				</div>
+    			</div>
+    			<div class="col-xl-8 offset-xl-1 col-lg-9">
+    				<div class="row row-cols-sm-4 row-cols-1">
+    					<div class="col">
+    						<ul class="nav flex-column mb-0">
+    							<li class="nav-item mb-2"><a class="nav-link p-0" href="#product">About</a></li>                  	
+    							<li class="nav-item mb-2"><a class="nav-link p-0" href="#product">Product</a></li>                	
+    							<li class="nav-item mb-2"><a class="nav-link p-0" href="#services">Services</a></li>
+    						</ul>
+    					</div>
+    					<div class="col">
+    						<ul class="nav flex-column mb-0">
 
-		</ul>
-	      </div>
-	      <div class="col">
-		<ul class="nav flex-column mb-0">
-		</ul>
-	      </div>
-	      <div class="col" id="contact">
-		<ul class="nav flex-column mb-0">
-		  <li class="nav flex-nowrap mb-3">
-		    <a class="nav-link fw-normal p-0 mt-n1" href="tel:+14084770823"><i class="ai-phone lead text-primary me-2"></i></a>
-		  </li>
+    						</ul>
+    					</div>
+    					<div class="col">
+    						<ul class="nav flex-column mb-0">
+    						</ul>
+    					</div>
+    					<div class="col" id="contact">
+    						<ul class="nav flex-column mb-0">
+    							<li class="nav flex-nowrap mb-3">
+    								<a class="nav-link fw-normal p-0 mt-n1" href="tel:+14084770823"><i class="ai-phone lead text-primary me-2"></i></a>
+    							</li>
 
-		  <li class="nav flex-nowrap mb-3">			
-		    <a class="nav-link fw-normal p-0 mt-n1" href="mailto:info@brags.ai"><i class="ai-mail lead text-primary me-2"></i></a>
-		  </li>
-		</ul>
-	      </div>
-	    </div>
-	  </div>
-	</div>
-	<div class="nav fs-sm text-body-secondary">&copy;&nbsp;2024 –&nbsp;<span id="spanYear"></span>.&nbsp;All rights reserved by <a class="nav-link fw-normal p-0 ms-1" href="https://www.brags.ai" target="_blank" rel="noopener">brags.ai</a></div>
-      </div>
+    							<li class="nav flex-nowrap mb-3">			
+    								<a class="nav-link fw-normal p-0 mt-n1" href="mailto:info@brags.ai"><i class="ai-mail lead text-primary me-2"></i></a>
+    							</li>
+    						</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="nav fs-sm text-body-secondary">&copy;&nbsp;2024 –&nbsp;<span id="spanYear"></span>.&nbsp;All rights reserved by <a class="nav-link fw-normal p-0 ms-1" href="https://www.brags.ai" target="_blank" rel="noopener">brags.ai</a></div>
+    	</div>
     </footer>
 
     <!-- Back to top button -->
     <a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
-      <svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-	<circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
-      </svg>
-      <i class="ai-arrow-up"></i>
+    	<svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    		<circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+    	</svg>
+    	<i class="ai-arrow-up"></i>
     </a>
 
 
@@ -699,8 +717,8 @@
     <!-- Bootstrap + Theme scripts -->
     <script src="assets/js/theme.min.js"></script>
     <script>
-      $('#spanYear').html(new Date().getFullYear());
+    	$('#spanYear').html(new Date().getFullYear());
     </script>
 
   </body>
-</html>
+  </html>
