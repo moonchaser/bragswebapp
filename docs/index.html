@@ -568,6 +568,11 @@
 									<div class="alert alert-success mt-4 mb-0 d-none" id="cf-thanks" role="status">Thanks! Your request is on its way. We'll get back to you within one business day.</div>
 									<div class="alert alert-danger mt-4 mb-0 d-none" id="cf-error" role="alert">Sorry, that didn't go through. Please try again in a moment.</div>
 								</form>
+								<!-- The address is put together by the script below, so it never sits in the HTML for scrapers. -->
+								<p class="fs-sm text-body-secondary border-top pt-3 mt-4 mb-0">
+									Prefer email? Write to <a class="js-email" data-user="info" data-domain="brags.ai" href="#contact">our team</a>.
+									<noscript>(info at brags dot ai)</noscript>
+								</p>
 							</div>
 						</div>
 					</div>
@@ -641,6 +646,13 @@
     <script src="assets/js/theme.min.js"></script>
     <script>
     	$('#spanYear').html(new Date().getFullYear());
+
+    	// Email links: assembled here so scrapers reading the raw HTML don't find the address.
+    	document.querySelectorAll('.js-email').forEach(function (link) {
+    		var address = link.dataset.user + '@' + link.dataset.domain;
+    		link.href = 'mailto:' + address + '?subject=' + encodeURIComponent('TrialCarta inquiry');
+    		link.textContent = address;
+    	});
 
     	// Buttons that lead to the contact form preselect what they were about.
     	document.querySelectorAll('a[data-interest]').forEach(function (link) {
