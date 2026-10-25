@@ -2,13 +2,13 @@
 <html lang="en" data-bs-theme="light">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HQLTES7ENY"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-05L6VGT0W0"></script>
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
 	gtag('js', new Date());
 
-	gtag('config', 'G-HQLTES7ENY');
+	gtag('config', 'G-05L6VGT0W0');
 </script>
 
 
@@ -675,6 +675,8 @@
     				if (!response.ok) throw new Error('Formspree ' + response.status);
     				form.querySelectorAll('.row').forEach(function (row) { row.classList.add('d-none'); });
     				thanks.classList.remove('d-none');
+    				// A demo or pilot request counts as a lead in Google Analytics.
+    				if (window.gtag) gtag('event', 'generate_lead', { lead_interest: form.elements.interest.value });
     			})
     			.catch(function () {
     				error.classList.remove('d-none');
