@@ -143,6 +143,47 @@
 <style>
 	/* Anchor links land below the fixed navbar. */
 	section[id] { scroll-margin-top: 84px; }
+
+	/* Brand palette: the TrialCarta app's teal instead of the theme's default green.
+	   Filled buttons stay deep teal in both modes (white text 5.5:1); outline buttons,
+	   links and icons use bright teal in dark mode (9.8:1 on the dark background). */
+	:root, [data-bs-theme=light] {
+		--ar-primary: #0F766E;
+		--ar-primary-rgb: 15, 118, 110;
+		--ar-primary-text-emphasis: #115E59;
+		--ar-primary-bg-subtle: #E6F4F2;
+		--ar-primary-border-subtle: #C9E7E3;
+		--ar-link-color: #0F766E;
+		--ar-link-color-rgb: 15, 118, 110;
+		--ar-link-hover-color: #115E59;
+		--ar-focus-ring-color: rgba(15, 118, 110, .25);
+	}
+	[data-bs-theme=dark] {
+		--ar-primary: #2DD4BF;
+		--ar-primary-rgb: 45, 212, 191;
+		--ar-primary-text-emphasis: #5EEAD4;
+		--ar-primary-bg-subtle: #0B2421;
+		--ar-primary-border-subtle: #134E4A;
+		--ar-link-color: #2DD4BF;
+		--ar-link-color-rgb: 45, 212, 191;
+		--ar-link-hover-color: #5EEAD4;
+		--ar-focus-ring-color: rgba(45, 212, 191, .25);
+	}
+	.btn-primary {
+		--ar-btn-color: #fff; --ar-btn-bg: #0F766E; --ar-btn-border-color: #0F766E;
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #115E59; --ar-btn-hover-border-color: #115E59;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #134E4A; --ar-btn-active-border-color: #134E4A;
+		--ar-btn-disabled-bg: #0F766E; --ar-btn-disabled-border-color: #0F766E;
+		--ar-btn-focus-shadow-rgb: 15, 118, 110;
+	}
+	.btn-outline-primary {
+		--ar-btn-color: var(--ar-primary); --ar-btn-border-color: var(--ar-primary);
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #0F766E; --ar-btn-hover-border-color: #0F766E;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #115E59; --ar-btn-active-border-color: #115E59;
+		--ar-btn-focus-shadow-rgb: var(--ar-primary-rgb);
+	}
+	/* Call-to-action band: same deep teal in both modes. */
+	.cta-band { background-color: #0F766E; }
 </style>
 
 <!-- Page loading scripts -->
@@ -197,7 +238,7 @@
 					</label>
 				</div>
 
-				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact">
+				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" data-interest="TrialCarta demo">
 					<i class="ai-calendar-check fs-xl me-2 ms-n1"></i>
 					Request a demo
 				</a>
@@ -243,16 +284,16 @@
 					<div class="col-lg-5 mb-5 mb-lg-0">
 						<div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-2 mb-3">
 							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary">TrialCarta · private beta</span>
-							<span class="badge fs-sm bg-secondary text-body"><i class="ai-apple me-1"></i>Built for Apple silicon (M1 and later)</span>
+							<span class="badge fs-sm bg-secondary text-body d-inline-flex align-items-center gap-1"><i class="ai-apple lh-1"></i><span>Built for Apple silicon (M1 and later)</span></span>
 						</div>
 						<h1 class="display-4 text-center text-lg-start pb-sm-2 pb-md-3">Private clinical trial intelligence on your Mac.</h1>
 						<p class="fs-lg text-center text-lg-start pb-xl-2 mx-auto mx-lg-0 mb-4" style="max-width: 480px;">From search to cited answers in minutes. Search ClinicalTrials.gov and PubMed, see the landscape at a glance, and compare it with your own protocols. Every answer cites its sources, and your confidential documents never leave your computer.</p>
 						<div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
-							<a class="btn btn-lg btn-primary" href="mailto:praveen@brags.ai?subject=TrialCarta%20demo%20request&amp;body=Indication%20we%27d%20like%20to%20see%3A%20%0D%0ATeam%20and%20role%3A%20%0D%0A">
+							<a class="btn btn-lg btn-primary" href="#contact" data-interest="TrialCarta demo">
 								<i class="ai-calendar-check fs-xl me-2 ms-n1"></i>
 								Request a demo
 							</a>
-							<a class="btn btn-lg btn-outline-primary" href="mailto:praveen@brags.ai?subject=TrialCarta%20pilot%20request&amp;body=Indication%20we%27d%20like%20to%20explore%3A%20%0D%0ATeam%20and%20role%3A%20%0D%0A">
+							<a class="btn btn-lg btn-outline-primary" href="#contact" data-interest="TrialCarta free 60-day pilot">
 								Start a free 60-day pilot
 							</a>
 						</div>
@@ -470,7 +511,7 @@
 							<p class="fs-lg mb-0">Ask questions about PDFs (including scanned ones), Word files, images or a whole folder, all on your Mac. Point it at a project folder and it keeps up with your changes before every question.</p>
 						</div>
 						<div class="col-lg-4 text-lg-end">
-							<a class="btn btn-lg btn-outline-primary" href="mailto:praveen@brags.ai?subject=bRAGs%20document%20chat">Ask about bRAGs</a>
+							<a class="btn btn-lg btn-outline-primary" href="#contact" data-interest="bRAGs document chat">Ask about bRAGs</a>
 						</div>
 					</div>
 				</div>
@@ -479,17 +520,55 @@
 
 
 		<!-- CTA -->
-		<section class="bg-primary py-5" data-bs-theme="dark" id="contact">
-			<div class="container pt-lg-2 pt-xl-4 pb-1 pb-sm-3">
-				<div class="row align-items-center pt-sm-3 pt-md-4">
-					<div class="col-md-6 col-xl-5 offset-xl-1">
+		<section class="cta-band py-5" data-bs-theme="dark" id="contact">
+			<div class="container py-lg-4">
+				<div class="row align-items-center g-5">
+					<div class="col-lg-5">
 						<h2 class="display-4">See TrialCarta on your own indication.</h2>
+						<p class="text-white fs-xl mb-0">We're based in San Diego and running free 60-day pilots with a small group of teams. Tell us the indication you care about and we'll walk you through it.</p>
 					</div>
-					<div class="col-md-6 col-lg-5 col-xl-4 offset-lg-1">
-						<p class="text-body fs-xl pb-3 mb-2">We're based in San Diego and running free 60-day pilots with a small group of teams. Send us an indication you care about and we'll walk you through it.</p>
-						<div class="d-flex flex-column flex-sm-row gap-3">
-							<a class="btn btn-lg btn-warning" href="mailto:praveen@brags.ai?subject=TrialCarta%20demo%20request&amp;body=Indication%20we%27d%20like%20to%20see%3A%20%0D%0ATeam%20and%20role%3A%20%0D%0A">Request a demo</a>
-							<a class="btn btn-lg btn-outline-light" href="mailto:praveen@brags.ai?subject=TrialCarta%20pilot%20request&amp;body=Indication%20we%27d%20like%20to%20explore%3A%20%0D%0ATeam%20and%20role%3A%20%0D%0A">Start a pilot</a>
+					<div class="col-lg-7 col-xl-6 offset-xl-1">
+						<div class="card border-0 rounded-5 shadow-lg" data-bs-theme="light">
+							<div class="card-body p-4 p-sm-5">
+								<form id="contact-form" action="https://formspree.io/f/mdeearga" method="POST">
+									<input type="hidden" name="_subject" value="TrialCarta request from brags.ai">
+									<!-- Honeypot: hidden from people, filled in by bots; Formspree drops those. -->
+									<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
+									<div class="row g-3">
+										<div class="col-sm-6">
+											<label class="form-label fs-sm" for="cf-name">Name</label>
+											<input class="form-control" type="text" id="cf-name" name="name" autocomplete="name" required>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label fs-sm" for="cf-email">Work email</label>
+											<input class="form-control" type="email" id="cf-email" name="email" autocomplete="email" required>
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-company">Company</label>
+											<input class="form-control" type="text" id="cf-company" name="company" autocomplete="organization">
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-interest">I'm interested in</label>
+											<select class="form-select" id="cf-interest" name="interest">
+												<option value="TrialCarta demo">A TrialCarta demo</option>
+												<option value="TrialCarta free 60-day pilot">A free 60-day pilot</option>
+												<option value="bRAGs document chat">bRAGs document chat</option>
+												<option value="Something else">Something else</option>
+											</select>
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-message">Indication or question</label>
+											<textarea class="form-control" id="cf-message" name="message" rows="3" placeholder="e.g. MASH, phase 2/3 competitive landscape"></textarea>
+										</div>
+										<div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+											<button class="btn btn-lg btn-primary" type="submit">Send request</button>
+											<span class="fs-sm text-body-secondary">We reply within one business day.</span>
+										</div>
+									</div>
+									<div class="alert alert-success mt-4 mb-0 d-none" id="cf-thanks" role="status">Thanks! Your request is on its way. We'll get back to you within one business day.</div>
+									<div class="alert alert-danger mt-4 mb-0 d-none" id="cf-error" role="alert">Sorry, that didn't go through. Please try again in a moment.</div>
+								</form>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -533,10 +612,7 @@
 						<div class="col">
 							<ul class="nav flex-column mb-0">
 								<li class="nav flex-nowrap mb-3">
-									<a class="nav-link fw-normal p-0 mt-n1" href="mailto:praveen@brags.ai"><i class="ai-mail lead text-primary me-2"></i>praveen@brags.ai</a>
-								</li>
-								<li class="nav flex-nowrap mb-3">
-									<a class="nav-link fw-normal p-0 mt-n1" href="tel:+14084770823"><i class="ai-phone lead text-primary me-2"></i>Call us</a>
+									<a class="nav-link fw-normal p-0 mt-n1" href="#contact"><i class="ai-mail lead text-primary me-2"></i>Contact us</a>
 								</li>
 							</ul>
 						</div>
@@ -565,6 +641,33 @@
     <script src="assets/js/theme.min.js"></script>
     <script>
     	$('#spanYear').html(new Date().getFullYear());
+
+    	// Buttons that lead to the contact form preselect what they were about.
+    	document.querySelectorAll('a[data-interest]').forEach(function (link) {
+    		link.addEventListener('click', function () {
+    			document.getElementById('cf-interest').value = link.dataset.interest;
+    		});
+    	});
+
+    	// Send through Formspree without leaving the page; without JavaScript the form
+    	// still posts normally and Formspree shows its own thank-you page.
+    	document.getElementById('contact-form').addEventListener('submit', function (event) {
+    		event.preventDefault();
+    		var form = event.target, button = form.querySelector('button[type=submit]');
+    		var thanks = document.getElementById('cf-thanks'), error = document.getElementById('cf-error');
+    		button.disabled = true;
+    		error.classList.add('d-none');
+    		fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+    			.then(function (response) {
+    				if (!response.ok) throw new Error('Formspree ' + response.status);
+    				form.querySelectorAll('.row').forEach(function (row) { row.classList.add('d-none'); });
+    				thanks.classList.remove('d-none');
+    			})
+    			.catch(function () {
+    				error.classList.remove('d-none');
+    				button.disabled = false;
+    			});
+    	});
     </script>
 
   </body>
