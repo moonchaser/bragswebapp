@@ -28,8 +28,49 @@
 <meta property="og:url" content="https://www.brags.ai/">
 <meta property="og:title" content="TrialCarta: clinical trial research in minutes, checked against the source">
 <meta property="og:description" content="Search ClinicalTrials.gov and PubMed, see the landscape, and compare your own protocol, with every number traced to its source. Confidential documents stay on your Mac.">
-<meta property="og:image" content="https://www.brags.ai/assets/img/trialcarta/search-timeline.jpg">
+<meta property="og:site_name" content="bRAGs">
+<meta property="og:image" content="https://www.brags.ai/assets/img/trialcarta/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TrialCarta: clinical trial research in minutes, checked against the source">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://www.brags.ai/assets/img/trialcarta/og-card.jpg">
+
+<!-- Icons -->
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/icon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.brags.ai/#org",
+      "name": "bRAGs",
+      "url": "https://www.brags.ai/",
+      "logo": "https://www.brags.ai/assets/favicon/icon-512.png",
+      "founder": { "@type": "Person", "name": "Praveen Samudrala" },
+      "address": { "@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US" },
+      "sameAs": ["https://www.linkedin.com/in/praveen-samudrala/"]
+    },
+    {
+      "@type": "SoftwareApplication",
+      "name": "TrialCarta",
+      "url": "https://www.brags.ai/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "Clinical trial research",
+      "operatingSystem": "macOS 14 or later, Apple silicon",
+      "description": "TrialCarta searches ClinicalTrials.gov and PubMed, charts the trial landscape, compares eligibility with your own protocol, and answers questions with every citation checked. It runs on your Mac, so confidential documents never leave it.",
+      "image": "https://www.brags.ai/assets/img/trialcarta/og-card.jpg",
+      "screenshot": "https://www.brags.ai/assets/img/trialcarta/protocol-offline.jpg",
+      "publisher": { "@id": "https://www.brags.ai/#org" }
+    }
+  ]
+}
+</script>
 <meta name="author" content="Praveen Samudrala">
 
 
@@ -262,6 +303,9 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#who">Who it's for</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="insights/mash-trial-landscape/">MASH landscape</a>
 						</li>
 					</ul>
 
@@ -664,6 +708,7 @@
 							<ul class="nav flex-column mb-0">
 								<li class="nav-item mb-2"><a class="nav-link p-0" href="#who">Who it's for</a></li>
 								<li class="nav-item mb-2"><a class="nav-link p-0" href="#contact">Request a demo</a></li>
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="insights/mash-trial-landscape/">MASH trial landscape</a></li>
 							</ul>
 						</div>
 						<div class="col">
