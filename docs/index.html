@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="light">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-05L6VGT0W0"></script>
+<!-- Google tag (gtag.js): loaded only on the live site, so local previews aren't counted -->
 <script>
 	window.dataLayer = window.dataLayer || [];
 	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-
-	gtag('config', 'G-05L6VGT0W0');
+	if (/(^|\.)brags\.ai$/.test(location.hostname)) {
+		var ga = document.createElement('script');
+		ga.async = true;
+		ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-05L6VGT0W0';
+		document.head.appendChild(ga);
+		gtag('js', new Date());
+		gtag('config', 'G-05L6VGT0W0');
+	}
 </script>
 
 
