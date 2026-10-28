@@ -665,6 +665,7 @@
 							<div class="card-body p-4 p-sm-5">
 								<form id="contact-form" action="https://formspree.io/f/mdeearga" method="POST">
 									<input type="hidden" name="_subject" value="TrialCarta request from brags.ai">
+									<input type="hidden" name="came_from" id="cf-from" value="">
 									<!-- Honeypot: hidden from people, filled in by bots; Formspree drops those. -->
 									<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
 									<div class="row g-3">
@@ -794,6 +795,15 @@
     			document.getElementById('cf-interest').value = link.dataset.interest;
     		});
     	});
+
+    	// Links from other pages (e.g. a landscape page) carry ?interest=...&from=...: preselect
+    	// the interest and note the page in the submission.
+    	(function () {
+    		var params = new URLSearchParams(location.search), select = document.getElementById('cf-interest');
+    		var interest = params.get('interest');
+    		if (interest && [].some.call(select.options, function (o) { return o.value === interest; })) select.value = interest;
+    		if (params.get('from')) document.getElementById('cf-from').value = params.get('from');
+    	})();
 
     	// Send through Formspree without leaving the page; without JavaScript the form
     	// still posts normally and Formspree shows its own thank-you page.
