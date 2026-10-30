@@ -327,7 +327,7 @@
 
 
 		<!-- Hero -->
-		<section class="overflow-hidden">
+		<section class="overflow-hidden" id="hero">
 			<div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
 				<div class="row align-items-center py-5 mt-md-2 my-lg-3 my-xl-4">
 					<div class="col-lg-5 mb-5 mb-lg-0">
@@ -633,7 +633,7 @@
 
 
 		<!-- bRAGs document chat -->
-		<section class="container py-5">
+		<section class="container py-5" id="brags">
 			<div class="card border-0 rounded-5">
 				<div class="card-body p-4 p-lg-5">
 					<div class="row align-items-center g-4">
@@ -824,6 +824,42 @@
     				error.classList.remove('d-none');
     				button.disabled = false;
     			});
+    	});
+
+    	// Analytics events (sent only on the live site; see the Google tag at the top).
+    	// Buttons and links to the contact form, with what they were about and where they sit.
+    	document.querySelectorAll('a[href="#contact"]').forEach(function (link) {
+    		link.addEventListener('click', function () {
+    			var place = link.closest('header, footer, section');
+    			gtag('event', 'contact_click', {
+    				interest: link.dataset.interest || '',
+    				link_text: link.textContent.trim().slice(0, 60),
+    				placement: place ? (place.id || place.tagName.toLowerCase()) : ''
+    			});
+    		});
+    	});
+    	document.querySelectorAll('.js-email').forEach(function (link) {
+    		link.addEventListener('click', function () { gtag('event', 'email_click'); });
+    	});
+    	document.querySelectorAll('a[href$="patient-check.jpg"]').forEach(function (link) {
+    		link.addEventListener('click', function () { gtag('event', 'patient_check_snapshot'); });
+    	});
+    	// Demo video: start, 25/50/75% watched, and finished (GA's recommended video events).
+    	document.querySelectorAll('#demo video').forEach(function (video) {
+    		var sent = {};
+    		function once(name, percent) {
+    			var key = name + (percent || '');
+    			if (sent[key]) return;
+    			sent[key] = true;
+    			gtag('event', name, { video_title: 'TrialCarta demo', video_percent: percent || 0 });
+    		}
+    		video.addEventListener('play', function () { once('video_start'); });
+    		video.addEventListener('timeupdate', function () {
+    			if (!video.duration) return;
+    			var watched = 100 * video.currentTime / video.duration;
+    			[25, 50, 75].forEach(function (p) { if (watched >= p) once('video_progress', p); });
+    		});
+    		video.addEventListener('ended', function () { once('video_complete', 100); });
     	});
     </script>
 
