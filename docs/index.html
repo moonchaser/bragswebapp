@@ -23,8 +23,8 @@
 
 <!-- SEO meta tags -->
 <title>TrialCarta by bRAGs | Clinical trial research in minutes, checked against the source</title>
-<meta name="description" content="TrialCarta does in minutes the clinical trial research an analyst spends days on: search ClinicalTrials.gov and PubMed, see the landscape, compare your own protocol, and trace every number to its source. Private, on your Mac.">
-<meta name="keywords" content="clinical trials, ClinicalTrials.gov, PubMed, competitive intelligence, clinical operations, feasibility, readout timeline, eligibility criteria, biotech, local AI, private AI, Mac">
+<meta name="description" content="TrialCarta does in minutes the clinical trial research an analyst spends days on: search ClinicalTrials.gov and PubMed, see the landscape, compare protocol versions, check redaction and trace every number to its source. Private, on your Mac.">
+<meta name="keywords" content="clinical trials, ClinicalTrials.gov, PubMed, competitive intelligence, clinical operations, feasibility, readout timeline, eligibility criteria, protocol amendment comparison, schedule of assessments, redaction check, competing trials, CRA tools, site feasibility, biotech, local AI, private AI, Mac">
 <link rel="canonical" href="https://www.brags.ai/">
 
 <!-- Social previews -->
@@ -68,7 +68,7 @@
       "applicationCategory": "BusinessApplication",
       "applicationSubCategory": "Clinical trial research",
       "operatingSystem": "macOS 14 or later, Apple silicon",
-      "description": "TrialCarta searches ClinicalTrials.gov and PubMed, charts the trial landscape, compares eligibility with your own protocol, and answers questions with every citation checked. It runs on your Mac, so confidential documents never leave it.",
+      "description": "TrialCarta searches ClinicalTrials.gov and PubMed, charts the trial landscape, compares eligibility with your own protocol, and answers questions with every citation checked. For study teams it compares protocol versions, turns the schedule of assessments into a visit checklist, checks redaction and finds competing trials near a site. It runs on your Mac, so confidential documents never leave it.",
       "image": "https://www.brags.ai/assets/img/trialcarta/og-card.jpg",
       "screenshot": "https://www.brags.ai/assets/img/trialcarta/protocol-offline.jpg",
       "publisher": { "@id": "https://www.brags.ai/#org" }
@@ -515,6 +515,60 @@
 				</div>
 			</div>
 
+			<!-- For study teams and sites -->
+			<div class="pt-lg-3 pb-5 mb-lg-3" id="study-teams">
+				<div class="text-center mx-auto pb-4" style="max-width: 720px;">
+					<h3 class="h2">For study teams and sites</h3>
+					<p class="fs-lg mb-0">The document work that eats a CRA's or coordinator's week. Done by rules, not AI, and the files never leave your Mac.</p>
+				</div>
+				<div class="row row-cols-1 row-cols-md-2 g-4">
+					<div class="col">
+						<div class="card border-0 h-100 rounded-5">
+							<div class="card-body">
+								<i class="ai-layout-column fs-1 text-primary d-block mb-3"></i>
+								<h4 class="h5">Compare protocol versions</h4>
+								<p class="mb-3">Drop in two versions of a protocol and see every change to eligibility, dosing, visits, safety reporting and sample size, with the section and page on both sides. It compares the full text, so it also catches changes the summary of changes doesn't mention.</p>
+								<a href="assets/img/trialcarta/version-compare.jpg" target="_blank" rel="noopener"><img class="d-block w-100 rounded-3 border" style="max-height: 300px; object-fit: cover; object-position: top;" src="assets/img/trialcarta/version-compare.jpg" loading="lazy" alt="TrialCarta comparing version 3 and version 4 of a fictional protocol: eligibility, dosing, schedule, safety reporting and sample size changes, each with its section and pages"></a>
+								<p class="fs-xs text-body-secondary mt-2 mb-0">Example with a fictional protocol. Click to enlarge.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border-0 h-100 rounded-5">
+							<div class="card-body">
+								<i class="ai-hide fs-1 text-primary d-block mb-3"></i>
+								<h4 class="h5">Check redaction before you send</h4>
+								<p class="mb-3">Catches names, MRNs and dates of birth that are still readable: missed entirely, under a black box drawn over live text, struck through, legible in a scan, or sitting in a spreadsheet column. The report masks every value it finds.</p>
+								<a href="assets/img/trialcarta/redaction-check.jpg" target="_blank" rel="noopener"><img class="d-block w-100 rounded-3 border" style="max-height: 300px; object-fit: cover; object-position: top;" src="assets/img/trialcarta/redaction-check.jpg" loading="lazy" alt="TrialCarta's redaction report on fake test documents: black boxes over live text, struck-through identifiers and readable scans, with every value masked"></a>
+								<p class="fs-xs text-body-secondary mt-2 mb-0">Example with made-up test documents. Click to enlarge.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border-0 h-100 rounded-5">
+							<div class="card-body">
+								<i class="ai-clipboard fs-1 text-primary d-block mb-3"></i>
+								<h4 class="h5">Schedule of assessments, as a checklist</h4>
+								<p class="mb-3">TrialCarta rebuilds the schedule of assessments table from the protocol PDF, including sideways pages and clear scans, and turns it into a per-visit checklist with footnotes kept. Save it as CSV for your visit tracker.</p>
+								<a href="assets/img/trialcarta/schedule-checklist.jpg" target="_blank" rel="noopener"><img class="d-block w-100 rounded-3 border" style="max-height: 300px; object-fit: cover; object-position: top;" src="assets/img/trialcarta/schedule-checklist.jpg" loading="lazy" alt="A per-visit checklist TrialCarta built from a protocol's schedule of assessments: efficacy, safety and treatment procedures for each visit, with footnote references"></a>
+								<p class="fs-xs text-body-secondary mt-2 mb-0">Click to enlarge.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card border-0 h-100 rounded-5">
+							<div class="card-body">
+								<i class="ai-map-pin fs-1 text-primary d-block mb-3"></i>
+								<h4 class="h5">Competing trials near a site</h4>
+								<p class="mb-3">Pick one of a trial's sites and a distance. TrialCarta lists the open trials for the same conditions nearby, same facility first, with sponsor, phase, ages, target enrollment and readout date.</p>
+								<a href="assets/img/trialcarta/competing-trials.jpg" target="_blank" rel="noopener"><img class="d-block w-100 rounded-3 border" style="max-height: 300px; object-fit: cover; object-position: top;" src="assets/img/trialcarta/competing-trials.jpg" loading="lazy" alt="TrialCarta listing open MASH trials near a site in Los Angeles, with sponsor, phase, nearest site and distance, ages, enrollment and readout date"></a>
+								<p class="fs-xs text-body-secondary mt-2 mb-0">From ClinicalTrials.gov records. Click to enlarge.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<!-- More features -->
 			<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 pt-2">
 				<div class="col">
@@ -602,7 +656,15 @@
 		<!-- Who it's for -->
 		<section class="container py-5" id="who">
 			<h2 class="h1 text-center pb-4 mb-2">Who it's for</h2>
-			<div class="row row-cols-1 row-cols-md-3 g-4">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<h3 class="h4">CRAs, coordinators and sites</h3>
+							<p class="mb-0">See what changed between protocol versions, turn the schedule of assessments into a visit checklist, check redaction before documents go out, and know which trials nearby recruit the same patients.</p>
+						</div>
+					</div>
+				</div>
 				<div class="col">
 					<div class="card border-0 h-100 rounded-5">
 						<div class="card-body">
@@ -685,6 +747,7 @@
 											<select class="form-select" id="cf-interest" name="interest">
 												<option value="TrialCarta demo">A TrialCarta demo</option>
 												<option value="TrialCarta free 15-day pilot">A free 15-day pilot</option>
+												<option value="TrialCarta for study teams and sites">Tools for my study team or site</option>
 												<option value="bRAGs document chat">bRAGs document chat</option>
 												<option value="Something else">Something else</option>
 											</select>
