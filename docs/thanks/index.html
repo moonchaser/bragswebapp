@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+<!-- Google tag (gtag.js): loaded only on the live site, so local previews aren't counted -->
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	if (/(^|\.)brags\.ai$/.test(location.hostname)) {
+		var ga = document.createElement('script');
+		ga.async = true;
+		ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-05L6VGT0W0';
+		document.head.appendChild(ga);
+		gtag('js', new Date());
+		gtag('config', 'G-05L6VGT0W0');
+	}
+</script>
+
+
+<meta charset="utf-8">
+
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+<!-- SEO meta tags -->
+<title>Thanks for your message | bRAGs</title>
+<meta name="description" content="Thanks for contacting bRAGs. We reply within one business day.">
+<meta name="robots" content="noindex">
+<meta name="keywords" content="private AI, local AI, RAG, retrieval-augmented generation, document chat, on-premise AI, confidential documents, Mac, San Diego">
+<link rel="canonical" href="https://www.brags.ai/thanks/">
+
+<!-- Social previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brags.ai/">
+<meta property="og:title" content="bRAGs: private AI that answers from your own documents">
+<meta property="og:description" content="Ask questions about your own documents with AI that runs on your computer or server. Nothing is sent to a cloud service.">
+<meta property="og:site_name" content="bRAGs">
+<meta name="twitter:card" content="summary">
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="../assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="../assets/favicon/icon-512.png">
+<link rel="apple-touch-icon" href="../assets/favicon/apple-touch-icon.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.brags.ai/#org",
+  "name": "bRAGs",
+  "url": "https://www.brags.ai/",
+  "logo": "https://www.brags.ai/assets/favicon/icon-512.png",
+  "foundingDate": "2024",
+  "description": "Private AI that runs on your own computer or server and answers from your own documents.",
+  "address": { "@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US" }
+}
+</script>
+<meta name="author" content="bRAGs">
+
+
+<!-- Theme switcher (color modes) -->
+<script src="../assets/js/theme-switcher.js"></script>
+
+<!-- Import Google font (Inter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+<!-- Vendor styles -->
+<link rel="stylesheet" media="screen" href="../assets/vendor/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" media="screen" href="../assets/vendor/aos/dist/aos.css">
+
+<!-- Font icons -->
+<link rel="stylesheet" href="../assets/icons/around-icons.min.css">
+
+<!-- Theme styles + Bootstrap -->
+<link rel="stylesheet" media="screen" href="../assets/css/theme.min.css">
+
+<!-- Page loading styles -->
+<style>
+	.page-loading {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all .4s .2s ease-in-out;
+		transition: all .4s .2s ease-in-out;
+		background-color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9999;
+	}
+	[data-bs-theme="dark"] .page-loading {
+		background-color: #121519;
+	}
+	.page-loading.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.page-loading-inner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		opacity: 0;
+	}
+	.page-loading.active > .page-loading-inner {
+		opacity: 1;
+	}
+	.page-loading-inner > span {
+		display: block;
+		font-family: "Inter", sans-serif;
+		font-size: 1rem;
+		font-weight: normal;
+		color: #6f788b;
+	}
+	[data-bs-theme="dark"] .page-loading-inner > span {
+		color: #fff;
+		opacity: .6;
+	}
+	.page-spinner {
+		display: inline-block;
+		width: 2.75rem;
+		height: 2.75rem;
+		margin-bottom: .75rem;
+		vertical-align: text-bottom;
+		background-color: #d7dde2; 
+		border-radius: 50%;
+		opacity: 0;
+		-webkit-animation: spinner .75s linear infinite;
+		animation: spinner .75s linear infinite;
+	}
+	[data-bs-theme="dark"] .page-spinner {
+		background-color: rgba(255,255,255,.25);
+	}
+	@-webkit-keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+	@keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+</style>
+
+<style>
+	/* Anchor links land below the fixed navbar. */
+	section[id] { scroll-margin-top: 84px; }
+
+	/* Brand palette: bRAGs indigo instead of the theme's default green.
+	   Filled buttons stay deep teal in both modes (white text 5.5:1); outline buttons,
+	   links and icons use bright teal in dark mode (9.8:1 on the dark background). */
+	:root, [data-bs-theme=light] {
+		--ar-primary: #4338CA;
+		--ar-primary-rgb: 67, 56, 202;
+		--ar-primary-text-emphasis: #3730A3;
+		--ar-primary-bg-subtle: #EEF0FD;
+		--ar-primary-border-subtle: #D9DCFA;
+		--ar-link-color: #4338CA;
+		--ar-link-color-rgb: 67, 56, 202;
+		--ar-link-hover-color: #3730A3;
+		--ar-focus-ring-color: rgba(67, 56, 202, .25);
+	}
+	[data-bs-theme=dark] {
+		--ar-primary: #A5B4FC;
+		--ar-primary-rgb: 165, 180, 252;
+		--ar-primary-text-emphasis: #C7D2FE;
+		--ar-primary-bg-subtle: #1A1B3A;
+		--ar-primary-border-subtle: #312E81;
+		--ar-link-color: #A5B4FC;
+		--ar-link-color-rgb: 165, 180, 252;
+		--ar-link-hover-color: #C7D2FE;
+		--ar-focus-ring-color: rgba(165, 180, 252, .25);
+	}
+	.btn-primary {
+		--ar-btn-color: #fff; --ar-btn-bg: #4338CA; --ar-btn-border-color: #4338CA;
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #3730A3; --ar-btn-hover-border-color: #3730A3;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #312E81; --ar-btn-active-border-color: #312E81;
+		--ar-btn-disabled-bg: #4338CA; --ar-btn-disabled-border-color: #4338CA;
+		--ar-btn-focus-shadow-rgb: 67, 56, 202;
+	}
+	.btn-outline-primary {
+		--ar-btn-color: var(--ar-primary); --ar-btn-border-color: var(--ar-primary);
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #4338CA; --ar-btn-hover-border-color: #4338CA;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #3730A3; --ar-btn-active-border-color: #3730A3;
+		--ar-btn-focus-shadow-rgb: var(--ar-primary-rgb);
+	}
+	/* Call-to-action band: same deep indigo in both modes. */
+	.cta-band { background-color: #4338CA; }
+</style>
+
+<!-- Page loading scripts -->
+<script>
+	(function () {
+		window.onload = function () {
+			const preloader = document.querySelector('.page-loading')
+			preloader.classList.remove('active')
+			setTimeout(function () {
+				preloader.remove()
+			}, 1500)
+		}
+	})()
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="bg-secondary">
+	<div class="page-loading active"><div class="page-loading-inner"><div class="page-spinner"></div><span>Loading...</span></div></div>
+	<main class="page-wrapper">
+		<header class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand pe-sm-3" href="../">
+					<img src="../assets/favicon/favicon.svg" width="30" height="30" class="me-2 rounded-2" alt="">bRAGs
+				</a>
+				<div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+					<input class="form-check-input" type="checkbox" id="theme-mode">
+					<label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
+					<label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+				</div>
+				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="../#contact" data-interest="bRAGs document chat">
+					<i class="ai-mail fs-xl me-2 ms-n1"></i>
+					Contact us
+				</a>
+				<button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<nav class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+						<li class="nav-item"><a class="nav-link" href="../#document-chat">Document chat</a></li>
+						<li class="nav-item"><a class="nav-link" href="../#custom">Custom builds</a></li>
+						<li class="nav-item"><a class="nav-link" href="../#trialcarta">TrialCarta</a></li>
+						<li class="nav-item"><a class="nav-link" href="../#privacy">Privacy</a></li>
+					</ul>
+					<div class="d-sm-none p-3 mt-n3">
+						<a class="btn btn-primary w-100 mb-1" href="../#contact"><i class="ai-mail fs-xl me-2 ms-n1"></i>Contact us</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="container pt-5 mt-5 pb-5">
+			<div class="mx-auto text-center py-5" style="max-width: 640px;">
+				<i class="ai-circle-check display-3 text-primary"></i>
+				<h1 class="display-5 pt-3 pb-2">Thanks, your message is on its way.</h1>
+				<p class="fs-lg">We reply within one business day.</p>
+				<div class="d-flex flex-column flex-sm-row justify-content-center gap-3 pt-3">
+					<a class="btn btn-lg btn-primary" href="../">Back to bRAGs</a>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer pt-lg-5 pt-4 pb-5">
+		<div class="container pt-3 mt-md-2 mt-lg-3">
+			<div class="row gy-md-5 gy-4 mb-md-5 mb-4 pb-lg-2">
+				<div class="col-lg-4">
+					<a class="navbar-brand d-inline-flex align-items-center mb-lg-4 mb-3" href="../">
+						<img src="../assets/favicon/favicon.svg" width="28" height="28" class="me-2 rounded-2" alt=""><span class="text-nav">bRAGs</span>
+					</a>
+					<p class="mb-4 pb-lg-1 fs-xs text-body-secondary" style="max-width: 320px;">Private AI that answers from your own documents, on your own computer or server. San Diego, since 2024.</p>
+				</div>
+				<div class="col-lg-8">
+					<div class="row row-cols-sm-3 row-cols-1">
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="../#document-chat">Document chat</a></li>
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="../#custom">Custom builds</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="../#trialcarta">TrialCarta</a></li>
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="../#privacy">Privacy</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav flex-nowrap mb-3">
+									<a class="nav-link fw-normal p-0 mt-n1" href="../#contact"><i class="ai-mail lead text-primary me-2"></i>Contact us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav fs-sm text-body-secondary">&copy;&nbsp;2024 –&nbsp;<span id="spanYear"></span>&nbsp;bRAGs. All rights reserved.</div>
+		</div>
+	</footer>
+	<script src="../assets/js/theme.min.js"></script>
+	<script>$('#spanYear').html(new Date().getFullYear());</script>
+</body>
+</html>

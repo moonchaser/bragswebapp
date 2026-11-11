@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+<!-- Google tag (gtag.js): loaded only on the live site, so local previews aren't counted -->
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	if (/(^|\.)brags\.ai$/.test(location.hostname)) {
+		var ga = document.createElement('script');
+		ga.async = true;
+		ga.src = 'https://www.googletagmanager.com/gtag/js?id=G-05L6VGT0W0';
+		document.head.appendChild(ga);
+		gtag('js', new Date());
+		gtag('config', 'G-05L6VGT0W0');
+	}
+</script>
+
+
+<meta charset="utf-8">
+
+<!-- Viewport -->
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+
+<!-- SEO meta tags -->
+<title>bRAGs | Private AI that answers from your own documents</title>
+<meta name="description" content="bRAGs builds private AI that runs on your own computer or server and answers from your own documents, with every answer traced to its source. Based in San Diego since 2024.">
+<meta name="keywords" content="private AI, local AI, RAG, retrieval-augmented generation, document chat, on-premise AI, confidential documents, Mac, San Diego">
+<link rel="canonical" href="https://www.brags.ai/">
+
+<!-- Social previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.brags.ai/">
+<meta property="og:title" content="bRAGs: private AI that answers from your own documents">
+<meta property="og:description" content="Ask questions about your own documents with AI that runs on your computer or server. Nothing is sent to a cloud service.">
+<meta property="og:site_name" content="bRAGs">
+<meta name="twitter:card" content="summary">
+
+<!-- Icons -->
+<link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/icon-512.png">
+<link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.brags.ai/#org",
+  "name": "bRAGs",
+  "url": "https://www.brags.ai/",
+  "logo": "https://www.brags.ai/assets/favicon/icon-512.png",
+  "foundingDate": "2024",
+  "description": "Private AI that runs on your own computer or server and answers from your own documents.",
+  "address": { "@type": "PostalAddress", "addressLocality": "San Diego", "addressRegion": "CA", "addressCountry": "US" }
+}
+</script>
+<meta name="author" content="bRAGs">
+
+
+<!-- Theme switcher (color modes) -->
+<script src="assets/js/theme-switcher.js"></script>
+
+<!-- Import Google font (Inter) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet" id="google-font">
+
+<!-- Vendor styles -->
+<link rel="stylesheet" media="screen" href="assets/vendor/swiper/swiper-bundle.min.css">
+<link rel="stylesheet" media="screen" href="assets/vendor/aos/dist/aos.css">
+
+<!-- Font icons -->
+<link rel="stylesheet" href="assets/icons/around-icons.min.css">
+
+<!-- Theme styles + Bootstrap -->
+<link rel="stylesheet" media="screen" href="assets/css/theme.min.css">
+
+<!-- Page loading styles -->
+<style>
+	.page-loading {
+		position: fixed;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		-webkit-transition: all .4s .2s ease-in-out;
+		transition: all .4s .2s ease-in-out;
+		background-color: #fff;
+		opacity: 0;
+		visibility: hidden;
+		z-index: 9999;
+	}
+	[data-bs-theme="dark"] .page-loading {
+		background-color: #121519;
+	}
+	.page-loading.active {
+		opacity: 1;
+		visibility: visible;
+	}
+	.page-loading-inner {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		-webkit-transform: translateY(-50%);
+		transform: translateY(-50%);
+		-webkit-transition: opacity .2s ease-in-out;
+		transition: opacity .2s ease-in-out;
+		opacity: 0;
+	}
+	.page-loading.active > .page-loading-inner {
+		opacity: 1;
+	}
+	.page-loading-inner > span {
+		display: block;
+		font-family: "Inter", sans-serif;
+		font-size: 1rem;
+		font-weight: normal;
+		color: #6f788b;
+	}
+	[data-bs-theme="dark"] .page-loading-inner > span {
+		color: #fff;
+		opacity: .6;
+	}
+	.page-spinner {
+		display: inline-block;
+		width: 2.75rem;
+		height: 2.75rem;
+		margin-bottom: .75rem;
+		vertical-align: text-bottom;
+		background-color: #d7dde2; 
+		border-radius: 50%;
+		opacity: 0;
+		-webkit-animation: spinner .75s linear infinite;
+		animation: spinner .75s linear infinite;
+	}
+	[data-bs-theme="dark"] .page-spinner {
+		background-color: rgba(255,255,255,.25);
+	}
+	@-webkit-keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+	@keyframes spinner {
+		0% {
+			-webkit-transform: scale(0);
+			transform: scale(0);
+		}
+		50% {
+			opacity: 1;
+			-webkit-transform: none;
+			transform: none;
+		}
+	}
+</style>
+
+<style>
+	/* Anchor links land below the fixed navbar. */
+	section[id] { scroll-margin-top: 84px; }
+
+	/* Brand palette: bRAGs indigo instead of the theme's default green.
+	   Filled buttons stay deep teal in both modes (white text 5.5:1); outline buttons,
+	   links and icons use bright teal in dark mode (9.8:1 on the dark background). */
+	:root, [data-bs-theme=light] {
+		--ar-primary: #4338CA;
+		--ar-primary-rgb: 67, 56, 202;
+		--ar-primary-text-emphasis: #3730A3;
+		--ar-primary-bg-subtle: #EEF0FD;
+		--ar-primary-border-subtle: #D9DCFA;
+		--ar-link-color: #4338CA;
+		--ar-link-color-rgb: 67, 56, 202;
+		--ar-link-hover-color: #3730A3;
+		--ar-focus-ring-color: rgba(67, 56, 202, .25);
+	}
+	[data-bs-theme=dark] {
+		--ar-primary: #A5B4FC;
+		--ar-primary-rgb: 165, 180, 252;
+		--ar-primary-text-emphasis: #C7D2FE;
+		--ar-primary-bg-subtle: #1A1B3A;
+		--ar-primary-border-subtle: #312E81;
+		--ar-link-color: #A5B4FC;
+		--ar-link-color-rgb: 165, 180, 252;
+		--ar-link-hover-color: #C7D2FE;
+		--ar-focus-ring-color: rgba(165, 180, 252, .25);
+	}
+	.btn-primary {
+		--ar-btn-color: #fff; --ar-btn-bg: #4338CA; --ar-btn-border-color: #4338CA;
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #3730A3; --ar-btn-hover-border-color: #3730A3;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #312E81; --ar-btn-active-border-color: #312E81;
+		--ar-btn-disabled-bg: #4338CA; --ar-btn-disabled-border-color: #4338CA;
+		--ar-btn-focus-shadow-rgb: 67, 56, 202;
+	}
+	.btn-outline-primary {
+		--ar-btn-color: var(--ar-primary); --ar-btn-border-color: var(--ar-primary);
+		--ar-btn-hover-color: #fff; --ar-btn-hover-bg: #4338CA; --ar-btn-hover-border-color: #4338CA;
+		--ar-btn-active-color: #fff; --ar-btn-active-bg: #3730A3; --ar-btn-active-border-color: #3730A3;
+		--ar-btn-focus-shadow-rgb: var(--ar-primary-rgb);
+	}
+	/* Call-to-action band: same deep indigo in both modes. */
+	.cta-band { background-color: #4338CA; }
+</style>
+
+<!-- Page loading scripts -->
+<script>
+	(function () {
+		window.onload = function () {
+			const preloader = document.querySelector('.page-loading')
+			preloader.classList.remove('active')
+			setTimeout(function () {
+				preloader.remove()
+			}, 1500)
+		}
+	})()
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<!-- Body -->
+<body class="bg-secondary">
+
+	<div class="page-loading active">
+		<div class="page-loading-inner">
+			<div class="page-spinner"></div>
+			<span>Loading...</span>
+		</div>
+	</div>
+
+	<main class="page-wrapper">
+
+		<header class="navbar navbar-expand-lg fixed-top">
+			<div class="container">
+				<a class="navbar-brand pe-sm-3" href="index.html">
+					<img src="assets/favicon/favicon.svg" width="30" height="30" class="me-2 rounded-2" alt="">bRAGs
+				</a>
+				<div class="form-check form-switch mode-switch order-lg-2 me-3 me-lg-4 ms-auto" data-bs-toggle="mode">
+					<input class="form-check-input" type="checkbox" id="theme-mode">
+					<label class="form-check-label" for="theme-mode"><i class="ai-sun fs-lg"></i></label>
+					<label class="form-check-label" for="theme-mode"><i class="ai-moon fs-lg"></i></label>
+				</div>
+				<a class="btn btn-primary btn-sm fs-sm order-lg-3 d-none d-sm-inline-flex" href="#contact" data-interest="bRAGs document chat">
+					<i class="ai-mail fs-xl me-2 ms-n1"></i>
+					Contact us
+				</a>
+				<button class="navbar-toggler ms-sm-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<nav class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav navbar-nav-scroll me-auto" style="--ar-scroll-height: 520px;">
+						<li class="nav-item"><a class="nav-link" href="#document-chat">Document chat</a></li>
+						<li class="nav-item"><a class="nav-link" href="#custom">Custom builds</a></li>
+						<li class="nav-item"><a class="nav-link" href="#trialcarta">TrialCarta</a></li>
+						<li class="nav-item"><a class="nav-link" href="#privacy">Privacy</a></li>
+					</ul>
+					<div class="d-sm-none p-3 mt-n3">
+						<a class="btn btn-primary w-100 mb-1" href="#contact"><i class="ai-mail fs-xl me-2 ms-n1"></i>Contact us</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<!-- Hero -->
+		<section class="overflow-hidden" id="hero">
+			<div class="container pt-2 pt-sm-4 pb-sm-2 pb-md-4 py-xl-5 mt-5">
+				<div class="row justify-content-center py-5 mt-md-2 my-lg-3 my-xl-4">
+					<div class="col-lg-9 text-center">
+						<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3">Private AI · San Diego · since 2024</span>
+						<h1 class="display-4 pb-sm-2 pb-md-3">Ask your own documents. Keep them to yourself.</h1>
+						<p class="fs-xl mx-auto mb-4" style="max-width: 680px;">bRAGs builds AI that runs on your own computer or your company's server and answers from your documents, with every answer pointing back to the page it came from. Nothing is sent to a cloud service, so confidential material stays confidential.</p>
+						<div class="d-flex flex-column flex-sm-row justify-content-center gap-3">
+							<a class="btn btn-lg btn-primary" href="#contact" data-interest="bRAGs document chat"><i class="ai-mail fs-xl me-2 ms-n1"></i>Talk to us</a>
+							<a class="btn btn-lg btn-outline-primary" href="#document-chat">See what it does</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Document chat -->
+		<section class="container py-5" id="document-chat">
+			<h2 class="h1 text-center pb-2">bRAGs document chat</h2>
+			<p class="fs-lg text-center pb-4 mb-3 mx-auto" style="max-width: 680px;">Point it at a file or a whole folder and ask questions in plain language. The model runs on your Mac; the answers quote and cite your documents.</p>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-file-text fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Any document</h3>
+							<p class="mb-0">PDFs, including scanned ones, Word files, images and text. Scans are read on your computer, so nothing is uploaded to be converted.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-folder fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Whole folders, kept current</h3>
+							<p class="mb-0">Point it at a project folder and it picks up new and changed files before every question, so answers reflect the latest version.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-check-alt fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Answers you can check</h3>
+							<p class="mb-0">Every answer cites the document and page it used, and you can open the source in one click to read it in context.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Custom builds -->
+		<section class="container py-5" id="custom">
+			<div class="row align-items-center g-4 g-lg-5">
+				<div class="col-lg-6">
+					<h2 class="h1">Custom private AI for your team</h2>
+					<p class="fs-lg">We build retrieval-augmented generation (RAG) systems on the same private engine, set up for a team's own documents, data and workflow, and running on hardware you control.</p>
+					<ul class="list-unstyled mb-0">
+						<li class="d-flex pt-1 mt-2"><i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>Runs inside your network: a Mac, a workstation or a server with a GPU</li>
+						<li class="d-flex pt-1 mt-2"><i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>Connects to the folders and systems your team already uses</li>
+						<li class="d-flex pt-1 mt-2"><i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>Answers cite their sources, so people can check them</li>
+						<li class="d-flex pt-1 mt-2"><i class="ai-check-alt text-primary fs-4 mt-n1 me-2"></i>A fixed scope and price, agreed before we start</li>
+					</ul>
+				</div>
+				<div class="col-lg-6">
+					<div class="row row-cols-1 row-cols-sm-2 g-3">
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-heart fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Life sciences</h3>
+							<p class="mb-0">Protocols, study reports and published literature, without sending them outside.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-briefcase fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Legal</h3>
+							<p class="mb-0">Contracts, filings and case files, searched and summarized privately.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-chart fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Finance</h3>
+							<p class="mb-0">Quarterly and annual filings, data rooms and internal memos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-settings fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Engineering and QA</h3>
+							<p class="mb-0">Test logs, specs and build output, made searchable and explained.</p>
+						</div>
+					</div>
+				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- TrialCarta -->
+		<section class="container py-5" id="trialcarta">
+			<div class="card border-0 rounded-5">
+				<div class="card-body p-4 p-lg-5">
+					<div class="row align-items-center g-4 g-lg-5">
+						<div class="col-lg-6">
+							<span class="badge fs-sm bg-primary bg-opacity-10 text-primary mb-3">Built on bRAGs</span>
+							<h2 class="h2">TrialCarta: clinical trial research, checked against the source</h2>
+							<p class="fs-lg">TrialCarta is a product built on the bRAGs engine for biotech teams. It searches ClinicalTrials.gov and PubMed, charts the trial landscape, compares a confidential protocol with competing trials, and checks every number against the registry record or paper it came from, all on your own computer.</p>
+							<a class="btn btn-lg btn-outline-primary" href="https://www.trialcarta.com/">Visit trialcarta.com <i class="ai-external-link ms-2"></i></a>
+						</div>
+						<div class="col-lg-6">
+							<img class="d-block w-100 rounded-4 shadow" src="assets/img/trialcarta-search.jpg" alt="TrialCarta search for nonalcoholic steatohepatitis trials, with a readout timeline of ongoing trials" loading="lazy">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Privacy -->
+		<section class="container py-5" id="privacy">
+			<h2 class="h1 text-center pb-4 mb-2">Private by design</h2>
+			<div class="row row-cols-1 row-cols-md-3 g-4">
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-lock-closed fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Stays on your hardware</h3>
+							<p class="mb-0">Documents, indexes and answers live on your computer or server. There is no bRAGs cloud for them to go to.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-wifi fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Works offline</h3>
+							<p class="mb-0">Once a model is downloaded, questions about your documents work with the internet switched off.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="card border-0 h-100 rounded-5">
+						<div class="card-body">
+							<i class="ai-layer fs-1 text-primary d-block mb-3"></i>
+							<h3 class="h4">Your choice of model</h3>
+							<p class="mb-0">Open models that run locally; pick the size that fits your hardware and your accuracy needs.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- Contact -->
+		<section class="cta-band py-5" data-bs-theme="dark" id="contact">
+			<div class="container py-lg-4">
+				<div class="row align-items-center g-4 g-lg-5">
+					<div class="col-lg-5">
+						<h2 class="display-4">Tell us what you need to ask.</h2>
+						<p class="text-white fs-xl mb-0">We're based in San Diego. Tell us about your documents and what you need answered, and we'll show you bRAGs working on something like them.</p>
+					</div>
+					<div class="col-lg-7 col-xl-6 offset-xl-1">
+						<div class="card border-0 rounded-5 shadow-lg" data-bs-theme="light">
+							<div class="card-body p-4 p-sm-5">
+								<form id="contact-form" action="https://formspree.io/f/mdeearga" method="POST">
+									<input type="hidden" name="_subject" value="bRAGs request from brags.ai">
+									<input type="hidden" name="came_from" id="cf-from" value="">
+									<!-- Honeypot: hidden from people, filled in by bots; Formspree drops those. -->
+									<input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-10000px; width:1px; height:1px; overflow:hidden;">
+									<div class="row g-3">
+										<div class="col-sm-6">
+											<label class="form-label fs-sm" for="cf-name">Name</label>
+											<input class="form-control" type="text" id="cf-name" name="name" autocomplete="name" required>
+										</div>
+										<div class="col-sm-6">
+											<label class="form-label fs-sm" for="cf-email">Work email</label>
+											<input class="form-control" type="email" id="cf-email" name="email" autocomplete="email" required>
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-company">Company</label>
+											<input class="form-control" type="text" id="cf-company" name="company" autocomplete="organization">
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-interest">I'm interested in</label>
+											<select class="form-select" id="cf-interest" name="interest">
+												<option value="bRAGs document chat">bRAGs document chat</option>
+												<option value="A custom private AI build">A custom private AI build for my team</option>
+												<option value="Something else">Something else</option>
+											</select>
+										</div>
+										<div class="col-12">
+											<label class="form-label fs-sm" for="cf-message">Your documents or question</label>
+											<textarea class="form-control" id="cf-message" name="message" rows="3" placeholder="e.g. 2,000 contracts we need to search and summarize"></textarea>
+										</div>
+										<div class="col-12 d-flex flex-column flex-sm-row align-items-sm-center gap-3">
+											<button class="btn btn-lg btn-primary" type="submit">Send</button>
+											<span class="fs-sm text-body-secondary">We reply within one business day.</span>
+										</div>
+									</div>
+									<div class="alert alert-success mt-4 mb-0 d-none" id="cf-thanks" role="status">Thanks! Your message is on its way. We'll get back to you within one business day.</div>
+									<div class="alert alert-danger mt-4 mb-0 d-none" id="cf-error" role="alert">Sorry, that didn't go through. Please try again in a moment.</div>
+								</form>
+								<!-- The address is put together by the script below, so it never sits in the HTML for scrapers. -->
+								<p class="fs-sm text-body-secondary border-top pt-3 mt-4 mb-0">
+									Prefer email? Write to <a class="js-email" data-user="info" data-domain="brags.ai" href="#contact">our team</a>.
+									<noscript>(info at brags dot ai)</noscript>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="footer pt-lg-5 pt-4 pb-5">
+		<div class="container pt-3 mt-md-2 mt-lg-3">
+			<div class="row gy-md-5 gy-4 mb-md-5 mb-4 pb-lg-2">
+				<div class="col-lg-4">
+					<a class="navbar-brand d-inline-flex align-items-center mb-lg-4 mb-3" href="index.html">
+						<img src="assets/favicon/favicon.svg" width="28" height="28" class="me-2 rounded-2" alt=""><span class="text-nav">bRAGs</span>
+					</a>
+					<p class="mb-4 pb-lg-1 fs-xs text-body-secondary" style="max-width: 320px;">Private AI that answers from your own documents, on your own computer or server. San Diego, since 2024.</p>
+				</div>
+				<div class="col-lg-8">
+					<div class="row row-cols-sm-3 row-cols-1">
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="#document-chat">Document chat</a></li>
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="#custom">Custom builds</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="#trialcarta">TrialCarta</a></li>
+								<li class="nav-item mb-2"><a class="nav-link p-0" href="#privacy">Privacy</a></li>
+							</ul>
+						</div>
+						<div class="col">
+							<ul class="nav flex-column mb-0">
+								<li class="nav flex-nowrap mb-3">
+									<a class="nav-link fw-normal p-0 mt-n1" href="#contact"><i class="ai-mail lead text-primary me-2"></i>Contact us</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav fs-sm text-body-secondary">&copy;&nbsp;2024 –&nbsp;<span id="spanYear"></span>&nbsp;bRAGs. All rights reserved.</div>
+		</div>
+	</footer>
+
+	<a class="btn-scroll-top" href="#top" data-scroll aria-label="Scroll back to top">
+		<svg viewBox="0 0 40 40" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+			<circle cx="20" cy="20" r="19" fill="none" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></circle>
+		</svg>
+		<i class="ai-arrow-up"></i>
+	</a>
+
+	<script src="assets/vendor/parallax-js/dist/parallax.min.js"></script>
+	<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+	<script src="assets/vendor/aos/dist/aos.js"></script>
+	<script src="assets/js/theme.min.js"></script>
+	<script src="assets/js/scroll-depth.js"></script>
+	<script>
+		$('#spanYear').html(new Date().getFullYear());
+
+		// Email links: assembled here so scrapers reading the raw HTML don't find the address.
+		document.querySelectorAll('.js-email').forEach(function (link) {
+			var address = link.dataset.user + '@' + link.dataset.domain;
+			link.href = 'mailto:' + address + '?subject=' + encodeURIComponent('bRAGs inquiry');
+			link.textContent = address;
+		});
+
+		// Buttons that lead to the contact form preselect what they were about.
+		document.querySelectorAll('a[data-interest]').forEach(function (link) {
+			link.addEventListener('click', function () {
+				document.getElementById('cf-interest').value = link.dataset.interest;
+			});
+		});
+
+		// Send through Formspree, then go to /thanks/; without JavaScript the form still posts
+		// normally and Formspree shows its own thank-you page.
+		document.getElementById('contact-form').addEventListener('submit', function (event) {
+			event.preventDefault();
+			var form = event.target, button = form.querySelector('button[type=submit]');
+			var thanks = document.getElementById('cf-thanks'), error = document.getElementById('cf-error');
+			button.disabled = true;
+			error.classList.add('d-none');
+			fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+				.then(function (response) {
+					if (!response.ok) throw new Error('Formspree ' + response.status);
+					form.querySelectorAll('.row').forEach(function (row) { row.classList.add('d-none'); });
+					thanks.classList.remove('d-none');
+					var go = function () { if (!go.done) { go.done = true; location.href = 'thanks/'; } };
+					gtag('event', 'generate_lead', { lead_interest: form.elements.interest.value, event_callback: go });
+					setTimeout(go, 1000);
+				})
+				.catch(function () {
+					error.classList.remove('d-none');
+					button.disabled = false;
+				});
+		});
+
+		// Analytics events (sent only on the live site; see the Google tag at the top).
+		document.querySelectorAll('a[href="#contact"]').forEach(function (link) {
+			link.addEventListener('click', function () {
+				var place = link.closest('header, footer, section');
+				gtag('event', 'contact_click', {
+					interest: link.dataset.interest || '',
+					link_text: link.textContent.trim().slice(0, 60),
+					placement: place ? (place.id || place.tagName.toLowerCase()) : ''
+				});
+			});
+		});
+		document.querySelectorAll('.js-email').forEach(function (link) {
+			link.addEventListener('click', function () { gtag('event', 'email_click'); });
+		});
+		document.querySelectorAll('a[href^="https://www.trialcarta.com"]').forEach(function (link) {
+			link.addEventListener('click', function () { gtag('event', 'trialcarta_click'); });
+		});
+	</script>
+</body>
+</html>
